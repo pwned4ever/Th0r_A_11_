@@ -1,4 +1,4 @@
-# Th0r 1.4.7
-A Fork of electra's sourcecode that supports ios 11.0 - 11.4(beta3)
+# Th0r 2
+A Fork of electra's sourcecode that supports ios 11.0 - 11.4.1 but broken and unfinished... FIX it?
 
 
