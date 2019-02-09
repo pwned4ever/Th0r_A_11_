@@ -1,25 +1,24 @@
 ///modified  by Marcel C (pwned4ever) 01/08/2018
 
 #import "ViewController.h"
-#include "codesign.h"
-#include "electra.h"
+#include "../../headers/codesign.h"
+#include "../../post-exploit/electra.h"
 
-#include "reboot.h"
-#include "multi_path_sploit.h"
-#include "vfs_sploit.h"
-#include "electra_objc.h"
+#include "../../headers/reboot.h"
+#include "../../exploit/multi_path/multi_path_sploit.h"
+#include "../../exploit/empty_list/vfs_sploit.h"
+#include "../../post-exploit/electra_objc.h"
 
-#include "kernel_memory.h"
-#include "offsets.h"
+#include "../../exploit/vouch_4ya/kernel_memory.h"
+#include "../../exploit/common/offsets.h"
 #include <sys/sysctl.h>
-#include "file_utils.h"
-#include "electra_objc.h"
-#include "utils.h"
-#include "amfi_utils.h"
-#include "kutils.h"
+#include "../../post-exploit/utilities/file_utils.h"
+#include "../../post-exploit/utilities/utils.h"
+#include "../../post-exploit/utilities/amfi_utils.h"
+#include "../../post-exploit/utilities/kutils.h"
 #include "Foundation/Foundation.h"
-#include "voucher_swap.h"
-#include "KernelMemory.h"
+#include "../../exploit/vouch_4ya/voucher_swap.h"
+#include "../../post-exploit/utilities/KernelMemory.h"
 @interface ViewController ()
 @end
 NSArray *_pickviewarray;
@@ -1725,35 +1724,38 @@ end:
             sleep(1);
         }
     }
+        //haha wtf /s, anyways lets make this better to make the tfp0 eaiser to find
         //int exploitstatus = vfs_sploit();
-        int exploitstatus = voucher_swap();
-        //#endif /* !WANT_VFS */
+         mach_port_t tfp0 = MACH_PORT_NULL;
+         tfp0 = voucher_swap();
+        //For iOS version detection
+#define SYSTEM_VERSION_EQUAL_TO(v)                  ([[[UIDevice currentDevice] systemVersion] compare:v options:NSNumericSearch] == NSOrderedSame)
+#define SYSTEM_VERSION_LESS_THAN(v)                 ([[[UIDevice currentDevice] systemVersion] compare:v options:NSNumericSearch] == NSOrderedAscending)
+#define SYSTEM_VERSION_GREATER_THAN(v)              ([[[UIDevice currentDevice] systemVersion] compare:v options:NSNumericSearch] == NSOrderedDescending)
+#define SYSTEM_VERSION_GREATER_THAN_OR_EQUAL_TO(v)  ([[[UIDevice currentDevice] systemVersion] compare:v options:NSNumericSearch] != NSOrderedAscending)
         
-        switch (exploitstatus) {
-            case ERR_NOERR: {
-                
-                dispatch_async(dispatch_get_main_queue(), ^{
-                    postProgress(localize(@"♫ Working ♫"));
-                });
-                break;
-            }
-            case ERR_EXPLOIT: {
-                postProgress(localize(@"Reboot/Retry😡"));
-                sleep(0.31);
-                postProgress(localize(@"closing😡"));
-                sleep(0.1);
-                exit(0);
-                return;
-            }
-            case ERR_UNSUPPORTED: {
-                postProgress(localize(@"Error: unsupported😡"));
-                return;
-            }
-            default:
-                postProgress(localize(@"Error sploiting😡"));
-                return;
+        if (SYSTEM_VERSION_LESS_THAN(@"11.0")) {
+             postProgress(localize(@"Not Supported😡"));
+            sleep(1);
+            return;
         }
-        mach_port_t tfp0 = kernel_task_port;
+        if (SYSTEM_VERSION_GREATER_THAN(@"11.4.1")) {
+            // also note that th0r will get ios 12 support soon shrug
+            postProgress(localize(@"Not Supported😡"));
+            sleep(1);
+            return;
+        }
+        
+        if (!MACH_PORT_VALID(tfp0)) {
+            postProgress(localize(@"Error: exploit😡"));
+            sleep(1);
+            return;
+        }
+        
+        //#endif /* !WANT_VFS */
+        dispatch_async(dispatch_get_main_queue(), ^{
+            postProgress(localize(@"♫ Working ♫"));
+        });
         
         //prepare_for_rw_with_fake_tfp0(tfp0);
 

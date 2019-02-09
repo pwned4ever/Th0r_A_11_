@@ -395,7 +395,6 @@
 		B060B7DC20BC0624001FD0CE /* Th0r114b3 */ = {
 			isa = PBXGroup;
 			children = (
-				FDA479C721F07A9600AC6AA2 /* Sounds */,
 				F191228920F137C20025A1BD /* Resources */,
 				2124A2F320EF52A700E30610 /* Extensions */,
 				21A2C43520DBC09E000BA2B2 /* libs */,
@@ -646,13 +645,6 @@
 			children = (
 			);
 			path = kernel_call;
-			sourceTree = "<group>";
-		};
-		FDA479C721F07A9600AC6AA2 /* Sounds */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Sounds;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
