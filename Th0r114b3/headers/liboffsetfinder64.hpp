@@ -57,7 +57,7 @@ namespace tihmstar {
             void slide(uint64_t slide){
                 if (!_slideme)
                     return;
-                //printf("sliding with %p\n",(void*)slide);
+                printf("sliding with %p\n",(void*)slide);
                 _slidefunc(this,slide);
                 _slideme = false; //only slide once
             }

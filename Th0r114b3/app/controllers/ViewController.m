@@ -19,6 +19,7 @@
 #include "Foundation/Foundation.h"
 #include "../../exploit/vouch_4ya/voucher_swap.h"
 #include "../../post-exploit/utilities/KernelMemory.h"
+
 @interface ViewController ()
 @end
 NSArray *_pickviewarray;
@@ -68,7 +69,7 @@ double uptime(){
     NSString *music=[[NSBundle mainBundle]pathForResource:@"LuckyU" ofType:@"mp3"];
     audioPlayer1=[[AVAudioPlayer alloc]initWithContentsOfURL:[NSURL fileURLWithPath:music]error:NULL];
     audioPlayer1.delegate=self;
-    audioPlayer1.volume=-3;
+    audioPlayer1.volume=-9;
     audioPlayer1.numberOfLoops=-1;
     [audioPlayer1 play];
     //[audioPlayer1 stop];}
@@ -97,7 +98,7 @@ double uptime(){
         UIAlertController *alertController = [UIAlertController alertControllerWithTitle:NSLocalizedString(@"𝓢Ⓗ⒜𝕽ᴱ JB Remover?", nil) message:NSLocalizedString(@"Are you sure you want to Share JB Remover?💣", nil) preferredStyle:UIAlertControllerStyleAlert];
         UIAlertAction *OK = [UIAlertAction actionWithTitle:NSLocalizedString(@"Sharing is caring", nil) style:UIAlertActionStyleDefault handler:^(UIAlertAction * _Nonnull action) {
             dispatch_async(dispatch_get_main_queue(), ^{
-                UIActivityViewController *activityViewController = [[UIActivityViewController alloc] initWithActivityItems:@[[NSString stringWithFormat:localize(@"I'm using Th0r 1.5.2-1 END GAME - Jailbreak Remover Toolkit for iOS 11.0 - 11.4(b3), Updated 01/28/19 1:20PM-EDT. By:@%@ 🍻, to remove the jailbreak on my %@ iOS %@. You can download it now @ %@" ), @pwned4ever_TEAM_TWITTER_HANDLE, [NSString stringWithUTF8String:u.machine],[[UIDevice currentDevice] systemVersion], @pwned4ever_URL]] applicationActivities:nil];
+                UIActivityViewController *activityViewController = [[UIActivityViewController alloc] initWithActivityItems:@[[NSString stringWithFormat:localize(@"I'm using Th0r 2 END GAME - Jailbreak Remover Toolkit for iOS 11.0 - 11.4.1, Updated 02/17/19 5:30PM-EDT. By:@%@ 🍻, to remove the jailbreak on my %@ iOS %@. You can download it now @ %@" ), @pwned4ever_TEAM_TWITTER_HANDLE, [NSString stringWithUTF8String:u.machine],[[UIDevice currentDevice] systemVersion], @pwned4ever_URL]] applicationActivities:nil];
                 activityViewController.excludedActivityTypes = @[UIActivityTypePrint, UIActivityTypeCopyToPasteboard, UIActivityTypeAssignToContact, UIActivityTypeSaveToCameraRoll, UIActivityTypeAirDrop, UIActivityTypeOpenInIBooks, UIActivityTypeMarkupAsPDF];
                 if ([activityViewController respondsToSelector:@selector(popoverPresentationController)] ) {
                     activityViewController.popoverPresentationController.sourceView = _jailbreak;
@@ -133,7 +134,7 @@ double uptime(){
         UIAlertController *alertController = [UIAlertController alertControllerWithTitle:NSLocalizedString(@"Wanna Share Th0r Jailbreak", nil) message:NSLocalizedString(@"𝓢Ⓗ⒜𝕽ᴱ Th0r 👍🏽 Jailbreak?", nil) preferredStyle:UIAlertControllerStyleAlert];UIAlertAction *OK = [UIAlertAction actionWithTitle:NSLocalizedString(@"Ya of course", nil) style:UIAlertActionStyleDefault handler:^(UIAlertAction * _Nonnull action) {
             dispatch_async(dispatch_get_main_queue(), ^{
                 [self.jailbreak setEnabled:YES];
-                UIActivityViewController *activityViewController = [[UIActivityViewController alloc] initWithActivityItems:@[[NSString stringWithFormat:localize(@"I'm using Th0r 1.5.2-1 END GAME - Jailbreak Toolkit for iOS 11.0 - 11.4(b3), Updated 01/28/19 1:20PM-EDT. By:@%@ 🍻, to jailbreak my %@ iOS %@. You can download it now @ %@" ), @pwned4ever_TEAM_TWITTER_HANDLE, [NSString stringWithUTF8String:u.machine],[[UIDevice currentDevice] systemVersion], @pwned4ever_URL]] applicationActivities:nil];
+                UIActivityViewController *activityViewController = [[UIActivityViewController alloc] initWithActivityItems:@[[NSString stringWithFormat:localize(@"I'm using Th0r 2 END GAME - Jailbreak Toolkit for iOS 11.0 - 11.4.1, Updated 02/17/19 5:30PM-EDT. By:@%@ 🍻, to jailbreak my %@ iOS %@. You can download it now @ %@" ), @pwned4ever_TEAM_TWITTER_HANDLE, [NSString stringWithUTF8String:u.machine],[[UIDevice currentDevice] systemVersion], @pwned4ever_URL]] applicationActivities:nil];
                 activityViewController.excludedActivityTypes = @[UIActivityTypePrint, UIActivityTypeCopyToPasteboard, UIActivityTypeAssignToContact, UIActivityTypeSaveToCameraRoll, UIActivityTypeAirDrop, UIActivityTypeOpenInIBooks, UIActivityTypeMarkupAsPDF];
                 if ([activityViewController respondsToSelector:@selector(popoverPresentationController)] ) {
                     activityViewController.popoverPresentationController.sourceView = _jailbreak;
@@ -156,6 +157,12 @@ double uptime(){
     });
     
 }
+#define SYSTEM_VERSION_EQUAL_TO(v)                  ([[[UIDevice currentDevice] systemVersion] compare:v options:NSNumericSearch] == NSOrderedSame)
+#define SYSTEM_VERSION_LESS_THAN(v)                 ([[[UIDevice currentDevice] systemVersion] compare:v options:NSNumericSearch] == NSOrderedAscending)
+#define SYSTEM_VERSION_GREATER_THAN(v)              ([[[UIDevice currentDevice] systemVersion] compare:v options:NSNumericSearch] == NSOrderedDescending)
+#define SYSTEM_VERSION_GREATER_THAN_OR_EQUAL_TO(v)  ([[[UIDevice currentDevice] systemVersion] compare:v options:NSNumericSearch] != NSOrderedAscending)
+
+
 
 - (void)viewDidLoad {
     [super viewDidLoad];
@@ -1591,11 +1598,29 @@ goto end;
         
         //[_jailbreak setTitle:localize(@"Removing Th0r") forState:UIControlStateNormal];
 
+    }else if ((!newTFcheckMyRemover4me) && (DIcheckth0rmarker ==0 && (DIcheckelectramarker ==0) && (DIcheckuncovermarker ==0) && (DIcheckpspawnhook ==0))){
+        [_enableTweaks setEnabled:YES];
+        [_enableTweaks setHidden:YES];
+        [_jailbreak setTitle:localize(@"Starting Th0r") forState:UIControlStateNormal];
+        goto end;
+        
+        //[_jailbreak setTitle:localize(@"Removing Th0r") forState:UIControlStateNormal];
+        
+    }else if ((!newTFcheckMyRemover4me) && (DIcheckth0rmarker ==0 && (DIcheckelectramarker ==0) && (DIcheckuncovermarker ==0))){
+        [_enableTweaks setEnabled:YES];
+        [_enableTweaks setHidden:YES];
+        [_jailbreak setTitle:localize(@"Starting Th0r") forState:UIControlStateNormal];
+        goto end;
+        
+        //[_jailbreak setTitle:localize(@"Removing Th0r") forState:UIControlStateNormal];
+        
     }
     
     else {
         [_enableTweaks setEnabled:YES];
-        [_jailbreak setTitle:localize(@"Enable gRoot?") forState:UIControlStateNormal];
+        //[_jailbreak setTitle:localize(@"Enable gRoot?") forState:UIControlStateNormal];
+        [_jailbreak setTitle:localize(@"Sploiting") forState:UIControlStateNormal];
+
         printf("what newcheck force install is showing :%d\n", newTFcheckofCyforce);
         printf("what testremover wannacheckforme is showing :%d\n", newTFcheckMyRemover4me);
         }
@@ -1612,154 +1637,139 @@ end:
     BOOL shouldEnableTweaks = [_enableTweaks isOn];
     dispatch_async(dispatch_get_global_queue(DISPATCH_QUEUE_PRIORITY_HIGH, 0ul), ^{
     int ut = 0;
+    if (vm_kernel_page_size != 0x4000) {
 
-    if (!strcmp(u.machine, "iPhone8,1") || (!strcmp(u.machine, "iPhone8,2"))) {
-        printf("i6s & 6s+ -----------\n");
-        
-        while ((ut = 99 - uptime()) > 0 ) {
-            NSString *msg = [NSString stringWithFormat:localize(@"%s %ds"),u.machine, ut+21];
-            dispatch_async(dispatch_get_main_queue(), ^{
-                postProgress(msg);
-            });
-            sleep(1);
-        }
-    }else if (!strcmp(u.machine, "iPhone10,1") || (!strcmp(u.machine, "iPhone10,4") || (!strcmp(u.machine, "iPhone10,2") || (!strcmp(u.machine, "iPhone10,5"))))) {
-        printf("i8 & i8 + -----------\n");
-        while ((ut = 56 - uptime()) > 0 ) {
-            NSString *msg = [NSString stringWithFormat:localize(@"%s %ds"),u.machine, ut+4];
-            dispatch_async(dispatch_get_main_queue(), ^{
-                postProgress(msg);
-            });
-            sleep(1);
-        }
-    }
-    else if (!strcmp(u.machine, "iPhone10,3") || (!strcmp(u.machine, "iPhone10,6"))) {
-        printf("iX wait 60 -----------\n");
-        while ((ut = 40 - uptime()) > 0 ) {
-            NSString *msg = [NSString stringWithFormat:localize(@"%s %ds"),u.machine, ut+20];
-            dispatch_async(dispatch_get_main_queue(), ^{
-                postProgress(msg);
-            });
-            sleep(1);
-        }
-    }
-        
-    else if (!strcmp(u.machine, "iPhone9,1") || (!strcmp(u.machine, "iPhone9,3") || (!strcmp(u.machine, "iPhone9,2") || (!strcmp(u.machine, "iPhone9,4"))))) {
-        printf("i7 & i7 + -----------\n");
-        while ((ut = 39 - uptime()) > 0 ) {
-            NSString *msg = [NSString stringWithFormat:localize(@"%s %ds"),u.machine, ut+21];
-            dispatch_async(dispatch_get_main_queue(), ^{
-                postProgress(msg);
-            });
-            sleep(1);
-        }
-        
-    }else if (!strcmp(u.machine, "iPhone8,4")) {
-        printf("iSE-----------\n");
-        while ((ut = 79 - uptime()) > 0 ) {
-            NSString *msg = [NSString stringWithFormat:localize(@"%s %ds"),u.machine, ut+21];
-            dispatch_async(dispatch_get_main_queue(), ^{
-                postProgress(msg);
-            });
-            sleep(1);
-        }
-        
-    }else if (!strcmp(u.machine, "iPad7,1") || (!strcmp(u.machine, "iPad7,2") || (!strcmp(u.machine, "iPad7,4") || (!strcmp(u.machine, "iPad7,5") || (!strcmp(u.machine, "iPad6,3") || (!strcmp(u.machine, "iPad6,4") || (!strcmp(u.machine, "iPad6,7") || (!strcmp(u.machine, "iPad6,8"))))))))) {
-        printf("iPad Pro 9, 10 & 12 in 2nd gen -----------\n");
-        while ((ut = 39 - uptime()) > 0 ) {
-            NSString *msg = [NSString stringWithFormat:localize(@"%s %ds"),u.machine, ut+21];
-            dispatch_async(dispatch_get_main_queue(), ^{
-                postProgress(msg);
-            });
-            sleep(1);
-        }
-    }
-        
-        /////////////////////////////
-        /////////////////////////////4k below
-        
-    else if (!strcmp(u.machine, "iPhone6,1") || (!strcmp(u.machine, "iPhone6,2") || (!strcmp(u.machine, "iPhone7,1") || (!strcmp(u.machine, "iPhone7,2"))))) {
-        printf("i5s & i6  & 6+ -----------\n");
-        printf("Hello %s ---------------\n", u.machine);
-        
-        while ((ut = 60 - uptime()) > 0 ) {
+        if (!strcmp(u.machine, "iPhone8,1") || (!strcmp(u.machine, "iPhone8,2"))) {
+            printf("i6s & 6s+ -----------\n");
             
-            NSString *msg = [NSString
-                             stringWithFormat:localize(@"%s %ds"),u.machine, ut+20];
-            dispatch_async(dispatch_get_main_queue(), ^{
-                postProgress(msg);
-            });
-            sleep(1);
+            while ((ut = 99 - uptime()) > 0 ) {
+                NSString *msg = [NSString stringWithFormat:localize(@"%s %ds"),u.machine, ut+21];
+                dispatch_async(dispatch_get_main_queue(), ^{
+                    postProgress(msg);
+                });
+                sleep(1);
+            }
+        }else if (!strcmp(u.machine, "iPhone10,1") || (!strcmp(u.machine, "iPhone10,4") || (!strcmp(u.machine, "iPhone10,2") || (!strcmp(u.machine, "iPhone10,5"))))) {
+            printf("i8 & i8 + -----------\n");
+            while ((ut = 56 - uptime()) > 0 ) {
+                NSString *msg = [NSString stringWithFormat:localize(@"%s %ds"),u.machine, ut+4];
+                dispatch_async(dispatch_get_main_queue(), ^{
+                    postProgress(msg);
+                });
+                sleep(1);
+            }
         }
-    }
-        
-    else if (!strcmp(u.machine, "iPad5,3") || (!strcmp(u.machine, "iPad5,4") || (!strcmp(u.machine, "iPad4,2") || (!strcmp(u.machine, "iPad4,3"))))) {
-        printf("iPad air 1 & 2 -----------\n");
-        while ((ut = 99 - uptime()) > 0 ) {
-            NSString *msg = [NSString stringWithFormat:localize(@"%s %ds"),u.machine, ut+14];
-            dispatch_async(dispatch_get_main_queue(), ^{
-                postProgress(msg);
-            });
-            sleep(1);
+        else if (!strcmp(u.machine, "iPhone10,3") || (!strcmp(u.machine, "iPhone10,6"))) {
+            printf("iX wait 60 -----------\n");
+            while ((ut = 40 - uptime()) > 0 ) {
+                NSString *msg = [NSString stringWithFormat:localize(@"%s %ds"),u.machine, ut+20];
+                dispatch_async(dispatch_get_main_queue(), ^{
+                    postProgress(msg);
+                });
+                sleep(1);
+            }
         }
         
-    }else if (!strcmp(u.machine, "iPad5,1") || (!strcmp(u.machine, "iPad5,2") || (!strcmp(u.machine, "iPad4,7") || (!strcmp(u.machine, "iPad4,8") || (!strcmp(u.machine, "iPad4,9")))))) {
-        printf("iPad mini 4 & 3 -----------\n");
-        
-        while ((ut = 116 - uptime()) > 0 ) {
+        else if (!strcmp(u.machine, "iPhone9,1") || (!strcmp(u.machine, "iPhone9,3") || (!strcmp(u.machine, "iPhone9,2") || (!strcmp(u.machine, "iPhone9,4"))))) {
+            printf("i7 & i7 + -----------\n");
+            while ((ut = 39 - uptime()) > 0 ) {
+                NSString *msg = [NSString stringWithFormat:localize(@"%s %ds"),u.machine, ut+21];
+                dispatch_async(dispatch_get_main_queue(), ^{
+                    postProgress(msg);
+                });
+                sleep(1);
+            }
             
-            NSString *msg = [NSString stringWithFormat:localize(@"%s %ds"),u.machine, ut+4];
-            dispatch_async(dispatch_get_main_queue(), ^{
-                postProgress(msg);
-            });
-            sleep(1);
+        }else if (!strcmp(u.machine, "iPhone8,4")) {
+            printf("iSE-----------\n");
+            while ((ut = 79 - uptime()) > 0 ) {
+                NSString *msg = [NSString stringWithFormat:localize(@"%s %ds"),u.machine, ut+21];
+                dispatch_async(dispatch_get_main_queue(), ^{
+                    postProgress(msg);
+                });
+                sleep(1);
+            }
+            
+        }else if (!strcmp(u.machine, "iPad7,1") || (!strcmp(u.machine, "iPad7,2") || (!strcmp(u.machine, "iPad7,4") || (!strcmp(u.machine, "iPad7,5") || (!strcmp(u.machine, "iPad6,3") || (!strcmp(u.machine, "iPad6,4") || (!strcmp(u.machine, "iPad6,7") || (!strcmp(u.machine, "iPad6,8"))))))))) {
+            printf("iPad Pro 9, 10 & 12 in 2nd gen -----------\n");
+            while ((ut = 39 - uptime()) > 0 ) {
+                NSString *msg = [NSString stringWithFormat:localize(@"%s %ds"),u.machine, ut+21];
+                dispatch_async(dispatch_get_main_queue(), ^{
+                    postProgress(msg);
+                });
+                sleep(1);
+            }
         }
-    }else if (!strcmp(u.machine, "iPod7,1")) {
-        printf("iPod 6 -----------\n");
-        while ((ut = 116 - uptime()) > 0 ) {
-            NSString *msg = [NSString stringWithFormat:localize(@"%s %ds"),u.machine, ut+4];
-            dispatch_async(dispatch_get_main_queue(), ^{
-                postProgress(msg);
-            });
-            sleep(1);
+        
+            /////////////////////////////
+            /////////////////////////////4k below
+        
+        else if (!strcmp(u.machine, "iPhone6,1") || (!strcmp(u.machine, "iPhone6,2") || (!strcmp(u.machine, "iPhone7,1") || (!strcmp(u.machine, "iPhone7,2"))))) {
+            printf("i5s & i6  & 6+ -----------\n");
+            printf("Hello %s ---------------\n", u.machine);
+            
+            while ((ut = 60 - uptime()) > 0 ) {
+                
+                NSString *msg = [NSString
+                                 stringWithFormat:localize(@"%s %ds"),u.machine, ut+20];
+                dispatch_async(dispatch_get_main_queue(), ^{
+                    postProgress(msg);
+                });
+                sleep(1);
+            }
         }
+        
+        else if (!strcmp(u.machine, "iPad5,3") || (!strcmp(u.machine, "iPad5,4") || (!strcmp(u.machine, "iPad4,2") || (!strcmp(u.machine, "iPad4,3"))))) {
+            printf("iPad air 1 & 2 -----------\n");
+            while ((ut = 99 - uptime()) > 0 ) {
+                NSString *msg = [NSString stringWithFormat:localize(@"%s %ds"),u.machine, ut+14];
+                dispatch_async(dispatch_get_main_queue(), ^{
+                    postProgress(msg);
+                });
+                sleep(1);
+            }
+            
+        }else if (!strcmp(u.machine, "iPad5,1") || (!strcmp(u.machine, "iPad5,2") || (!strcmp(u.machine, "iPad4,7") || (!strcmp(u.machine, "iPad4,8") || (!strcmp(u.machine, "iPad4,9")))))) {
+            printf("iPad mini 4 & 3 -----------\n");
+            
+            while ((ut = 116 - uptime()) > 0 ) {
+                
+                NSString *msg = [NSString stringWithFormat:localize(@"%s %ds"),u.machine, ut+4];
+                dispatch_async(dispatch_get_main_queue(), ^{
+                    postProgress(msg);
+                });
+                sleep(1);
+            }
+        }else if (!strcmp(u.machine, "iPod7,1")) {
+            printf("iPod 6 -----------\n");
+            while ((ut = 116 - uptime()) > 0 ) {
+                NSString *msg = [NSString stringWithFormat:localize(@"%s %ds"),u.machine, ut+4];
+                dispatch_async(dispatch_get_main_queue(), ^{
+                    postProgress(msg);
+                });
+                sleep(1);
+            }
+        }
+    }else{
+        postProgress(localize(@"skipping wait😡"));
+
     }
-        //haha wtf /s, anyways lets make this better to make the tfp0 eaiser to find
-        //int exploitstatus = vfs_sploit();
-         mach_port_t tfp0 = MACH_PORT_NULL;
-         tfp0 = voucher_swap();
-        //For iOS version detection
-#define SYSTEM_VERSION_EQUAL_TO(v)                  ([[[UIDevice currentDevice] systemVersion] compare:v options:NSNumericSearch] == NSOrderedSame)
-#define SYSTEM_VERSION_LESS_THAN(v)                 ([[[UIDevice currentDevice] systemVersion] compare:v options:NSNumericSearch] == NSOrderedAscending)
-#define SYSTEM_VERSION_GREATER_THAN(v)              ([[[UIDevice currentDevice] systemVersion] compare:v options:NSNumericSearch] == NSOrderedDescending)
-#define SYSTEM_VERSION_GREATER_THAN_OR_EQUAL_TO(v)  ([[[UIDevice currentDevice] systemVersion] compare:v options:NSNumericSearch] != NSOrderedAscending)
         
-        if (SYSTEM_VERSION_LESS_THAN(@"11.0")) {
-             postProgress(localize(@"Not Supported😡"));
-            sleep(1);
-            return;
-        }
-        if (SYSTEM_VERSION_GREATER_THAN(@"11.4.1")) {
-            // also note that th0r will get ios 12 support soon shrug
-            postProgress(localize(@"Not Supported😡"));
-            sleep(1);
-            return;
-        }
-        
-        if (!MACH_PORT_VALID(tfp0)) {
+         mach_port_t tipsyPIEfp0 = MACH_PORT_NULL;
+         tipsyPIEfp0 = voucher_swap();
+
+        if (!MACH_PORT_VALID(tipsyPIEfp0)) {
             postProgress(localize(@"Error: exploit😡"));
             sleep(1);
             return;
         }
         
-        //#endif /* !WANT_VFS */
         dispatch_async(dispatch_get_main_queue(), ^{
             postProgress(localize(@"♫ Working ♫"));
         });
         
-        //prepare_for_rw_with_fake_tfp0(tfp0);
 
-        int jailbreakstatus = start_Th0r(tfp0, shouldEnableTweaks);
+        int jailbreakstatus = start_Th0r(tipsyPIEfp0, shouldEnableTweaks);
         switch (jailbreakstatus) {
             case ERR_NOERR: {
                 
@@ -1823,8 +1833,10 @@ end:
                 break;
             }
             case ERR_ROOTFS_REMOUNT: {
-                postProgress(localize(@"Remove update file"));
+                postProgress(localize(@"APFS ss Failed"));
+                
                 break;
+                
             }
             case ERR_SNAPSHOT: {
                 postProgress(localize(@"Error: snapshot failed😡"));
@@ -1996,7 +2008,24 @@ NSString *getURLForUsername(NSString *user) {
     sleep(0.31);
 
 }
-
+- (void)Vouchermessage{
+    dispatch_async(dispatch_get_main_queue(), ^{
+        postProgress(localize(@"Voucher sploit"));
+    });
+    sleep(1);
+}
+- (void)runningpatches{
+    dispatch_async(dispatch_get_main_queue(), ^{
+        postProgress(localize(@"patching"));
+    });
+    sleep(1);
+}
+- (void)runningexploit{
+    dispatch_async(dispatch_get_main_queue(), ^{
+        postProgress(localize(@"exploit worked"));
+    });
+    sleep(1);
+}
 - (void)almostdone {
     
     

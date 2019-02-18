@@ -1,0 +1,150 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXFileReference section */
+		FD84E10D2210D18400F7CE9E /* Makefile */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.make; path = Makefile; sourceTree = "<group>"; };
+		FD84E10E2210D18400F7CE9E /* patchfinder64.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = patchfinder64.h; sourceTree = "<group>"; };
+		FD84E10F2210D18400F7CE9E /* mach-o_nlist.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "mach-o_nlist.h"; sourceTree = "<group>"; };
+		FD84E1102210D18400F7CE9E /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
+		FD84E1112210D18400F7CE9E /* test_versions.py */ = {isa = PBXFileReference; lastKnownFileType = text.script.python; path = test_versions.py; sourceTree = "<group>"; };
+		FD84E1122210D18400F7CE9E /* fetch_kerncaches */ = {isa = PBXFileReference; lastKnownFileType = text.script.python; path = fetch_kerncaches; sourceTree = "<group>"; };
+		FD84E1132210D18400F7CE9E /* patchfinder64.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = patchfinder64.c; sourceTree = "<group>"; };
+		FD84E1142210D18400F7CE9E /* mach-o_loader.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "mach-o_loader.h"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXGroup section */
+		FD84E1072210D18400F7CE9E = {
+			isa = PBXGroup;
+			children = (
+				FD84E10D2210D18400F7CE9E /* Makefile */,
+				FD84E10E2210D18400F7CE9E /* patchfinder64.h */,
+				FD84E10F2210D18400F7CE9E /* mach-o_nlist.h */,
+				FD84E1102210D18400F7CE9E /* README.md */,
+				FD84E1112210D18400F7CE9E /* test_versions.py */,
+				FD84E1122210D18400F7CE9E /* fetch_kerncaches */,
+				FD84E1132210D18400F7CE9E /* patchfinder64.c */,
+				FD84E1142210D18400F7CE9E /* mach-o_loader.h */,
+			);
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXLegacyTarget section */
+		FD84E10C2210D18400F7CE9E /* extendedheaders */ = {
+			isa = PBXLegacyTarget;
+			buildArgumentsString = "$(ACTION)";
+			buildConfigurationList = FD84E1152210D18400F7CE9E /* Build configuration list for PBXLegacyTarget "extendedheaders" */;
+			buildPhases = (
+			);
+			buildToolPath = /usr/bin/make;
+			buildWorkingDirectory = "/Users/pwned0sxever/Downloads/Th0r_A_11_-master-2/Th0r114b3/headers/extendedheaders";
+			dependencies = (
+			);
+			name = extendedheaders;
+			passBuildSettingsInEnvironment = 1;
+			productName = extendedheaders;
+		};
+/* End PBXLegacyTarget section */
+
+/* Begin PBXProject section */
+		FD84E1082210D18400F7CE9E /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+			};
+			buildConfigurationList = FD84E10B2210D18400F7CE9E /* Build configuration list for PBXProject "extendedheaders" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = FD84E1072210D18400F7CE9E;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				FD84E10C2210D18400F7CE9E /* extendedheaders */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin XCBuildConfiguration section */
+		FD84E1092210D18400F7CE9E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				COPY_PHASE_STRIP = NO;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx10.6;
+			};
+			name = Debug;
+		};
+		FD84E10A2210D18400F7CE9E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				COPY_PHASE_STRIP = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				SDKROOT = macosx10.6;
+			};
+			name = Release;
+		};
+		FD84E1162210D18400F7CE9E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COPY_PHASE_STRIP = NO;
+				DEBUGGING_SYMBOLS = YES;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_ENABLE_FIX_AND_CONTINUE = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				OTHER_CFLAGS = "";
+				OTHER_LDFLAGS = "";
+				PRODUCT_NAME = extendedheaders;
+			};
+			name = Debug;
+		};
+		FD84E1172210D18400F7CE9E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COPY_PHASE_STRIP = YES;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				GCC_ENABLE_FIX_AND_CONTINUE = NO;
+				OTHER_CFLAGS = "";
+				OTHER_LDFLAGS = "";
+				PRODUCT_NAME = extendedheaders;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		FD84E10B2210D18400F7CE9E /* Build configuration list for PBXProject "extendedheaders" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FD84E1092210D18400F7CE9E /* Debug */,
+				FD84E10A2210D18400F7CE9E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		FD84E1152210D18400F7CE9E /* Build configuration list for PBXLegacyTarget "extendedheaders" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FD84E1162210D18400F7CE9E /* Debug */,
+				FD84E1172210D18400F7CE9E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = FD84E1082210D18400F7CE9E /* Project object */;
+}

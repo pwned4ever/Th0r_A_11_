@@ -1,6 +1,16 @@
 #import <UIKit/UIKit.h>
 #import <AVFoundation/AVFoundation.h>
 #import <AudioToolbox/AudioToolbox.h>
+#import "common.h"
+
+#define __FILENAME__ (__builtin_strrchr(__FILE__, '/') ? __builtin_strrchr(__FILE__, '/') + 1 : __FILE__)
+
+//static NSString *message = nil;
+#define SETMESSAGE(msg) (message = msg)
+
+#define _assert(test, message, fatal) do \
+printf("__assert(%d:%s)@%s:%u[%s]", saved_errno, #test, __FILENAME__, __LINE__, __FUNCTION__); \
+
 
 @interface ViewController : UIViewController <UIPickerViewDelegate, UIPickerViewDataSource, AVAudioPlayerDelegate> {
     IBOutlet UIImageView *_logoView;
@@ -60,7 +70,9 @@ int systemf(const char *cmd, ...);
 - (void)almostdone;
 - (void)waittermkernel;
 - (void)waitfaketfp;
-
+- (void)Vouchermessage;
+- (void)runningpatches;
+- (void)runningexploit;
 - (void)serverS;
 - (void)cydiaDone;
 - (void)JBremoverIsDone;
