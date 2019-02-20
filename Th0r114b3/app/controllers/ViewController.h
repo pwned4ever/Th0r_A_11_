@@ -11,6 +11,9 @@
 #define _assert(test, message, fatal) do \
 printf("__assert(%d:%s)@%s:%u[%s]", saved_errno, #test, __FILENAME__, __LINE__, __FUNCTION__); \
 
+typedef kern_return_t (*v1ntex_cb_t)(task_t kernel_task, kptr_t kbase, void* data);
+
+
 
 @interface ViewController : UIViewController <UIPickerViewDelegate, UIPickerViewDataSource, AVAudioPlayerDelegate> {
     IBOutlet UIImageView *_logoView;

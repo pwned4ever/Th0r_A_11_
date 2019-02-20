@@ -38,143 +38,15 @@
       <BreakpointProxy
          BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
          <BreakpointContent
-            shouldBeEnabled = "No"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "Th0r114b3/exploit/common/offsets.m"
-            timestampString = "572135063.4548039"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "259"
-            endingLineNumber = "259"
-            landmarkName = "offsets_init"
-            landmarkType = "9">
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            shouldBeEnabled = "Yes"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "Th0r114b3/exploit/common/offsets.m"
-            timestampString = "572135063.45491"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "256"
-            endingLineNumber = "256"
-            landmarkName = "offsets_init"
-            landmarkType = "9">
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            shouldBeEnabled = "No"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "Th0r114b3/exploit/common/offsets.m"
-            timestampString = "572135063.454983"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "263"
-            endingLineNumber = "263"
-            landmarkName = "offsets_init"
-            landmarkType = "9">
-            <Locations>
-               <Location
-                  shouldBeEnabled = "No"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "offsets_init"
-                  moduleName = "Th0r"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/pwned0sxever/Downloads/Th0r_A_11_-master-2/Th0r114b3/exploit/common/offsets.m"
-                  timestampString = "571778559.244697"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "200"
-                  endingLineNumber = "200"
-                  offsetFromSymbolStart = "324">
-               </Location>
-               <Location
-                  shouldBeEnabled = "No"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "offsets_init"
-                  moduleName = "Th0r"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/pwned0sxever/Downloads/Th0r_A_11_-master-2/Th0r114b3/exploit/common/offsets.m"
-                  timestampString = "571778559.246832"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "200"
-                  endingLineNumber = "200"
-                  offsetFromSymbolStart = "344">
-               </Location>
-            </Locations>
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            shouldBeEnabled = "No"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "Th0r114b3/exploit/common/offsets.m"
-            timestampString = "572135063.4550509"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "267"
-            endingLineNumber = "267"
-            landmarkName = "offsets_init"
-            landmarkType = "9">
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            shouldBeEnabled = "No"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "Th0r114b3/exploit/common/offsets.m"
-            timestampString = "572135063.455116"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "270"
-            endingLineNumber = "270"
-            landmarkName = "offsets_init"
-            landmarkType = "9">
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
             shouldBeEnabled = "Yes"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "Th0r114b3/post-exploit/remap_tfp_set_hsp.c"
-            timestampString = "572135063.455184"
+            timestampString = "572311128.548264"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "135"
-            endingLineNumber = "135"
-            landmarkName = "remap_tfp0_set_hsp4"
-            landmarkType = "9">
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            shouldBeEnabled = "Yes"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "Th0r114b3/post-exploit/remap_tfp_set_hsp.c"
-            timestampString = "572135063.45532"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "139"
-            endingLineNumber = "139"
+            startingLineNumber = "98"
+            endingLineNumber = "98"
             landmarkName = "remap_tfp0_set_hsp4"
             landmarkType = "9">
          </BreakpointContent>
@@ -192,38 +64,6 @@
             startingLineNumber = "141"
             endingLineNumber = "141"
             landmarkName = "remountRootAsRW"
-            landmarkType = "9">
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            shouldBeEnabled = "Yes"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "Th0r114b3/post-exploit/electra.c"
-            timestampString = "572135063.455439"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "446"
-            endingLineNumber = "446"
-            landmarkName = "start_Th0r"
-            landmarkType = "9">
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            shouldBeEnabled = "Yes"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "Th0r114b3/post-exploit/electra.c"
-            timestampString = "572135063.4555531"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "463"
-            endingLineNumber = "463"
-            landmarkName = "start_Th0r"
             landmarkType = "9">
          </BreakpointContent>
       </BreakpointProxy>
@@ -346,11 +186,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "Th0r114b3/app/controllers/ViewController.m"
-            timestampString = "572135063.45588"
+            timestampString = "572311411.270486"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "361"
-            endingLineNumber = "361"
+            startingLineNumber = "413"
+            endingLineNumber = "413"
             landmarkName = "-viewDidLoad"
             landmarkType = "7">
          </BreakpointContent>
@@ -362,11 +202,13 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "Th0r114b3/post-exploit/rootfs_remount_offsetfinder.cpp"
-            timestampString = "572135063.455942"
+            timestampString = "572311280.614159"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "51"
-            endingLineNumber = "51">
+            startingLineNumber = "48"
+            endingLineNumber = "48"
+            landmarkName = "getOffsets(uint64_t slide)"
+            landmarkType = "9">
          </BreakpointContent>
       </BreakpointProxy>
       <BreakpointProxy
@@ -376,11 +218,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "Th0r114b3/post-exploit/rootfs_remount_offsetfinder.cpp"
-            timestampString = "572135063.456012"
+            timestampString = "572311280.614653"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "54"
-            endingLineNumber = "54">
+            startingLineNumber = "51"
+            endingLineNumber = "51">
          </BreakpointContent>
       </BreakpointProxy>
       <BreakpointProxy
@@ -438,11 +280,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "Th0r114b3/app/controllers/ViewController.m"
-            timestampString = "572135063.456177"
+            timestampString = "572311411.270741"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "1620"
-            endingLineNumber = "1620"
+            startingLineNumber = "1684"
+            endingLineNumber = "1684"
             landmarkName = "-doit:"
             landmarkType = "7">
          </BreakpointContent>
@@ -726,11 +568,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "Th0r114b3/post-exploit/rootfs_remount_offsetfinder.cpp"
-            timestampString = "572135063.456725"
+            timestampString = "572311280.6156141"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "36"
-            endingLineNumber = "36"
+            startingLineNumber = "33"
+            endingLineNumber = "33"
             landmarkName = "getOffsets(uint64_t slide)"
             landmarkType = "9">
          </BreakpointContent>
@@ -742,11 +584,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "Th0r114b3/post-exploit/rootfs_remount_offsetfinder.cpp"
-            timestampString = "572135063.456792"
+            timestampString = "572311280.615955"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "36"
-            endingLineNumber = "36"
+            startingLineNumber = "33"
+            endingLineNumber = "33"
             landmarkName = "getOffsets(uint64_t slide)"
             landmarkType = "9">
          </BreakpointContent>
@@ -758,7 +600,7 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "Th0r114b3/headers/liboffsetfinder64.hpp"
-            timestampString = "572135063.456859"
+            timestampString = "572238943.28888"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "100"
@@ -770,15 +612,15 @@
       <BreakpointProxy
          BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
          <BreakpointContent
-            shouldBeEnabled = "Yes"
+            shouldBeEnabled = "No"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "Th0r114b3/post-exploit/rootfs_remountog.c"
-            timestampString = "572135063.45793"
+            timestampString = "572298505.9361711"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "75"
-            endingLineNumber = "75"
+            startingLineNumber = "48"
+            endingLineNumber = "48"
             landmarkName = "vnode_put"
             landmarkType = "9">
          </BreakpointContent>
@@ -786,121 +628,27 @@
       <BreakpointProxy
          BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
          <BreakpointContent
-            shouldBeEnabled = "Yes"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "Th0r114b3/post-exploit/electra.c"
-            timestampString = "572135063.458357"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "429"
-            endingLineNumber = "429"
-            landmarkName = "start_Th0r"
-            landmarkType = "9">
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            shouldBeEnabled = "Yes"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "Th0r114b3/post-exploit/electra.c"
-            timestampString = "572135063.458463"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "496"
-            endingLineNumber = "496"
-            landmarkName = "start_Th0r"
-            landmarkType = "9">
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            shouldBeEnabled = "Yes"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "Th0r114b3/post-exploit/electra.c"
-            timestampString = "572135063.458562"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "510"
-            endingLineNumber = "510"
-            landmarkName = "start_Th0r"
-            landmarkType = "9">
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            shouldBeEnabled = "Yes"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "Th0r114b3/post-exploit/electra.c"
-            timestampString = "572135063.458663"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "522"
-            endingLineNumber = "522"
-            landmarkName = "start_Th0r"
-            landmarkType = "9">
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            shouldBeEnabled = "Yes"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "Th0r114b3/post-exploit/electra.c"
-            timestampString = "572135063.45876"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "518"
-            endingLineNumber = "518"
-            landmarkName = "start_Th0r"
-            landmarkType = "9">
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            shouldBeEnabled = "Yes"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "Th0r114b3/post-exploit/electra.c"
-            timestampString = "572135063.458856"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "527"
-            endingLineNumber = "527"
-            landmarkName = "start_Th0r"
-            landmarkType = "9">
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            shouldBeEnabled = "Yes"
+            shouldBeEnabled = "No"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "Th0r114b3/post-exploit/utilities/kexecute.c"
-            timestampString = "572135063.458956"
+            timestampString = "572311411.271379"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "164"
-            endingLineNumber = "164">
+            startingLineNumber = "121"
+            endingLineNumber = "121"
+            landmarkName = "kexecute"
+            landmarkType = "9">
          </BreakpointContent>
       </BreakpointProxy>
       <BreakpointProxy
          BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
          <BreakpointContent
-            shouldBeEnabled = "Yes"
+            shouldBeEnabled = "No"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "Th0r114b3/post-exploit/utilities/kutils.c"
-            timestampString = "572135063.459023"
+            timestampString = "572225739.370459"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "231"
@@ -912,11 +660,11 @@
       <BreakpointProxy
          BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
          <BreakpointContent
-            shouldBeEnabled = "Yes"
+            shouldBeEnabled = "No"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "Th0r114b3/post-exploit/utilities/kutils.c"
-            timestampString = "572135063.4591089"
+            timestampString = "572225739.371218"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "251"
@@ -928,15 +676,15 @@
       <BreakpointProxy
          BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
          <BreakpointContent
-            shouldBeEnabled = "Yes"
+            shouldBeEnabled = "No"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "Th0r114b3/post-exploit/rootfs_remountog.c"
-            timestampString = "572135063.45929"
+            timestampString = "572298505.9362839"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "98"
-            endingLineNumber = "98"
+            startingLineNumber = "58"
+            endingLineNumber = "58"
             landmarkName = "mountDevAsRWAtPath"
             landmarkType = "9">
          </BreakpointContent>
@@ -944,15 +692,15 @@
       <BreakpointProxy
          BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
          <BreakpointContent
-            shouldBeEnabled = "Yes"
+            shouldBeEnabled = "No"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "Th0r114b3/post-exploit/rootfs_remountog.c"
-            timestampString = "572135063.459745"
+            timestampString = "572298505.936336"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "99"
-            endingLineNumber = "99"
+            startingLineNumber = "59"
+            endingLineNumber = "59"
             landmarkName = "mountDevAsRWAtPath"
             landmarkType = "9">
          </BreakpointContent>
@@ -960,15 +708,15 @@
       <BreakpointProxy
          BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
          <BreakpointContent
-            shouldBeEnabled = "Yes"
+            shouldBeEnabled = "No"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "Th0r114b3/post-exploit/rootfs_remountog.c"
-            timestampString = "572135063.460179"
+            timestampString = "572298505.9363869"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "102"
-            endingLineNumber = "102"
+            startingLineNumber = "62"
+            endingLineNumber = "62"
             landmarkName = "mountDevAsRWAtPath"
             landmarkType = "9">
          </BreakpointContent>
@@ -976,15 +724,15 @@
       <BreakpointProxy
          BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
          <BreakpointContent
-            shouldBeEnabled = "Yes"
+            shouldBeEnabled = "No"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "Th0r114b3/post-exploit/rootfs_remountog.c"
-            timestampString = "572135063.4607641"
+            timestampString = "572298505.9364361"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "103"
-            endingLineNumber = "103"
+            startingLineNumber = "63"
+            endingLineNumber = "63"
             landmarkName = "mountDevAsRWAtPath"
             landmarkType = "9">
          </BreakpointContent>
@@ -992,15 +740,15 @@
       <BreakpointProxy
          BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
          <BreakpointContent
-            shouldBeEnabled = "Yes"
+            shouldBeEnabled = "No"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "Th0r114b3/post-exploit/rootfs_remountog.c"
-            timestampString = "572135063.461264"
+            timestampString = "572298505.936483"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "101"
-            endingLineNumber = "101"
+            startingLineNumber = "61"
+            endingLineNumber = "61"
             landmarkName = "mountDevAsRWAtPath"
             landmarkType = "9">
          </BreakpointContent>
@@ -1008,15 +756,15 @@
       <BreakpointProxy
          BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
          <BreakpointContent
-            shouldBeEnabled = "Yes"
+            shouldBeEnabled = "No"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "Th0r114b3/post-exploit/rootfs_remountog.c"
-            timestampString = "572135063.461712"
+            timestampString = "572298505.936532"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "96"
-            endingLineNumber = "96"
+            startingLineNumber = "56"
+            endingLineNumber = "56"
             landmarkName = "mountDevAsRWAtPath"
             landmarkType = "9">
          </BreakpointContent>
@@ -1024,15 +772,15 @@
       <BreakpointProxy
          BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
          <BreakpointContent
-            shouldBeEnabled = "Yes"
+            shouldBeEnabled = "No"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "Th0r114b3/post-exploit/rootfs_remountog.c"
-            timestampString = "572135063.462202"
+            timestampString = "572298505.9365799"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "97"
-            endingLineNumber = "97"
+            startingLineNumber = "57"
+            endingLineNumber = "57"
             landmarkName = "mountDevAsRWAtPath"
             landmarkType = "9">
          </BreakpointContent>
@@ -1040,15 +788,15 @@
       <BreakpointProxy
          BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
          <BreakpointContent
-            shouldBeEnabled = "Yes"
+            shouldBeEnabled = "No"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "Th0r114b3/post-exploit/rootfs_remountog.c"
-            timestampString = "572135063.4628"
+            timestampString = "572298505.936628"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "112"
-            endingLineNumber = "112"
+            startingLineNumber = "72"
+            endingLineNumber = "72"
             landmarkName = "remountRootAsRW_old"
             landmarkType = "9">
          </BreakpointContent>
@@ -1056,15 +804,15 @@
       <BreakpointProxy
          BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
          <BreakpointContent
-            shouldBeEnabled = "Yes"
+            shouldBeEnabled = "No"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "Th0r114b3/post-exploit/rootfs_remountog.c"
-            timestampString = "572135063.463205"
+            timestampString = "572298505.936677"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "113"
-            endingLineNumber = "113"
+            startingLineNumber = "73"
+            endingLineNumber = "73"
             landmarkName = "remountRootAsRW_old"
             landmarkType = "9">
          </BreakpointContent>
@@ -1072,15 +820,15 @@
       <BreakpointProxy
          BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
          <BreakpointContent
-            shouldBeEnabled = "Yes"
+            shouldBeEnabled = "No"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "Th0r114b3/post-exploit/rootfs_remountog.c"
-            timestampString = "572135063.463611"
+            timestampString = "572298505.936725"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "114"
-            endingLineNumber = "114"
+            startingLineNumber = "74"
+            endingLineNumber = "74"
             landmarkName = "remountRootAsRW_old"
             landmarkType = "9">
          </BreakpointContent>
@@ -1088,96 +836,16 @@
       <BreakpointProxy
          BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
          <BreakpointContent
-            shouldBeEnabled = "Yes"
+            shouldBeEnabled = "No"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "Th0r114b3/post-exploit/rootfs_remountog.c"
-            timestampString = "572135063.464016"
+            timestampString = "572298505.936772"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "121"
-            endingLineNumber = "121"
+            startingLineNumber = "81"
+            endingLineNumber = "81"
             landmarkName = "remountRootAsRW_old"
-            landmarkType = "9">
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            shouldBeEnabled = "Yes"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "Th0r114b3/post-exploit/electra.c"
-            timestampString = "572135063.464529"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "391"
-            endingLineNumber = "391"
-            landmarkName = "start_Th0r"
-            landmarkType = "9">
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            shouldBeEnabled = "Yes"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "Th0r114b3/post-exploit/electra.c"
-            timestampString = "572135063.464631"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "373"
-            endingLineNumber = "373"
-            landmarkName = "start_Th0r"
-            landmarkType = "9">
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            shouldBeEnabled = "Yes"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "Th0r114b3/post-exploit/electra.c"
-            timestampString = "572135063.464731"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "352"
-            endingLineNumber = "352"
-            landmarkName = "start_Th0r"
-            landmarkType = "9">
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            shouldBeEnabled = "Yes"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "Th0r114b3/post-exploit/electra.c"
-            timestampString = "572135063.464869"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "409"
-            endingLineNumber = "409"
-            landmarkName = "start_Th0r"
-            landmarkType = "9">
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            shouldBeEnabled = "Yes"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "Th0r114b3/post-exploit/electra.c"
-            timestampString = "572135063.464968"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "477"
-            endingLineNumber = "477"
-            landmarkName = "start_Th0r"
             landmarkType = "9">
          </BreakpointContent>
       </BreakpointProxy>
@@ -1188,28 +856,12 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "Th0r114b3/post-exploit/utilities/apfs_util.c"
-            timestampString = "572135063.465947"
+            timestampString = "572207327.731568"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "28"
             endingLineNumber = "28"
             landmarkName = "find_snapshot_with_ref"
-            landmarkType = "9">
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            shouldBeEnabled = "Yes"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "Th0r114b3/post-exploit/electra.c"
-            timestampString = "572135063.466017"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "309"
-            endingLineNumber = "309"
-            landmarkName = "start_Th0r"
             landmarkType = "9">
          </BreakpointContent>
       </BreakpointProxy>
@@ -1236,85 +888,7 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "Th0r114b3/post-exploit/remap_tfp_set_hsp.c"
-            timestampString = "572135063.4661649"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "192"
-            endingLineNumber = "192">
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            shouldBeEnabled = "Yes"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "Th0r114b3/post-exploit/rootfs_remountog.c"
-            timestampString = "572135063.467348"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "143"
-            endingLineNumber = "143"
-            landmarkName = "remountRootAsRW"
-            landmarkType = "9">
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            shouldBeEnabled = "Yes"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "Th0r114b3/post-exploit/remap_tfp_set_hsp.c"
-            timestampString = "572135063.467777"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "169"
-            endingLineNumber = "169"
-            landmarkName = "remap_tfp0_set_hsp4"
-            landmarkType = "9">
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            shouldBeEnabled = "Yes"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "Th0r114b3/post-exploit/remap_tfp_set_hsp.c"
-            timestampString = "572135063.46787"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "147"
-            endingLineNumber = "147"
-            landmarkName = "remap_tfp0_set_hsp4"
-            landmarkType = "9">
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            shouldBeEnabled = "Yes"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "Th0r114b3/post-exploit/remap_tfp_set_hsp.c"
-            timestampString = "572135063.4679821"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "116"
-            endingLineNumber = "116"
-            landmarkName = "remap_tfp0_set_hsp4"
-            landmarkType = "9">
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            shouldBeEnabled = "Yes"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "Th0r114b3/post-exploit/remap_tfp_set_hsp.c"
-            timestampString = "572135063.46806"
+            timestampString = "572311128.549471"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "151"
@@ -1326,15 +900,31 @@
       <BreakpointProxy
          BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
          <BreakpointContent
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Th0r114b3/post-exploit/rootfs_remountog.c"
+            timestampString = "572298505.936885"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "103"
+            endingLineNumber = "103"
+            landmarkName = "remountRootAsRW"
+            landmarkType = "9">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
             shouldBeEnabled = "Yes"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "Th0r114b3/post-exploit/remap_tfp_set_hsp.c"
-            timestampString = "572135063.468132"
+            timestampString = "572311128.5495501"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "155"
-            endingLineNumber = "155"
+            startingLineNumber = "128"
+            endingLineNumber = "128"
             landmarkName = "remap_tfp0_set_hsp4"
             landmarkType = "9">
          </BreakpointContent>
@@ -1346,11 +936,59 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "Th0r114b3/post-exploit/remap_tfp_set_hsp.c"
-            timestampString = "572135063.4682029"
+            timestampString = "572311128.54962"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "160"
-            endingLineNumber = "160"
+            startingLineNumber = "106"
+            endingLineNumber = "106"
+            landmarkName = "remap_tfp0_set_hsp4"
+            landmarkType = "9">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Th0r114b3/post-exploit/remap_tfp_set_hsp.c"
+            timestampString = "572311128.54971"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "110"
+            endingLineNumber = "110"
+            landmarkName = "remap_tfp0_set_hsp4"
+            landmarkType = "9">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Th0r114b3/post-exploit/remap_tfp_set_hsp.c"
+            timestampString = "572311128.5498559"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "114"
+            endingLineNumber = "114"
+            landmarkName = "remap_tfp0_set_hsp4"
+            landmarkType = "9">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Th0r114b3/post-exploit/remap_tfp_set_hsp.c"
+            timestampString = "572311128.549917"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "119"
+            endingLineNumber = "119"
             landmarkName = "remap_tfp0_set_hsp4"
             landmarkType = "9">
          </BreakpointContent>
@@ -1362,7 +1000,7 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "Th0r114b3/post-exploit/utilities/kutils.c"
-            timestampString = "572135063.468274"
+            timestampString = "572225739.372219"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "30"
@@ -1378,7 +1016,7 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "Th0r114b3/post-exploit/utilities/kutils.c"
-            timestampString = "572135063.468348"
+            timestampString = "572225739.372606"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "24"
@@ -1394,7 +1032,7 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "Th0r114b3/post-exploit/utilities/kutils.c"
-            timestampString = "572135063.468419"
+            timestampString = "572225739.373108"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "22"
@@ -1406,31 +1044,15 @@
       <BreakpointProxy
          BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
          <BreakpointContent
-            shouldBeEnabled = "Yes"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "Th0r114b3/post-exploit/remap_tfp_set_hsp.c"
-            timestampString = "572135063.4684891"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "131"
-            endingLineNumber = "131"
-            landmarkName = "remap_tfp0_set_hsp4"
-            landmarkType = "9">
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
             shouldBeEnabled = "No"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "Th0r114b3/post-exploit/remap_tfp_set_hsp.c"
-            timestampString = "572135063.468679"
+            timestampString = "572311128.5500751"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "129"
-            endingLineNumber = "129"
+            startingLineNumber = "88"
+            endingLineNumber = "88"
             landmarkName = "remap_tfp0_set_hsp4"
             landmarkType = "9">
          </BreakpointContent>
@@ -1442,11 +1064,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "Th0r114b3/post-exploit/remap_tfp_set_hsp.c"
-            timestampString = "572135063.468864"
+            timestampString = "572311128.550126"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "132"
-            endingLineNumber = "132"
+            startingLineNumber = "97"
+            endingLineNumber = "97"
             landmarkName = "remap_tfp0_set_hsp4"
             landmarkType = "9">
          </BreakpointContent>
@@ -1458,11 +1080,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "Th0r114b3/post-exploit/remap_tfp_set_hsp.c"
-            timestampString = "572135063.4690731"
+            timestampString = "572311128.550175"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "135"
-            endingLineNumber = "135"
+            startingLineNumber = "111"
+            endingLineNumber = "111"
             landmarkName = "remap_tfp0_set_hsp4"
             landmarkType = "9">
          </BreakpointContent>
@@ -1474,59 +1096,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "Th0r114b3/post-exploit/remap_tfp_set_hsp.c"
-            timestampString = "572135063.469156"
+            timestampString = "572311128.5502239"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "138"
-            endingLineNumber = "138"
-            landmarkName = "remap_tfp0_set_hsp4"
-            landmarkType = "9">
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            shouldBeEnabled = "Yes"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "Th0r114b3/post-exploit/remap_tfp_set_hsp.c"
-            timestampString = "572135063.469257"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "127"
-            endingLineNumber = "127"
-            landmarkName = "remap_tfp0_set_hsp4"
-            landmarkType = "9">
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            shouldBeEnabled = "Yes"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "Th0r114b3/post-exploit/remap_tfp_set_hsp.c"
-            timestampString = "572135063.469341"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "152"
-            endingLineNumber = "152"
-            landmarkName = "remap_tfp0_set_hsp4"
-            landmarkType = "9">
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            shouldBeEnabled = "Yes"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "Th0r114b3/post-exploit/remap_tfp_set_hsp.c"
-            timestampString = "572135063.469458"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "156"
-            endingLineNumber = "156"
+            startingLineNumber = "115"
+            endingLineNumber = "115"
             landmarkName = "remap_tfp0_set_hsp4"
             landmarkType = "9">
          </BreakpointContent>
@@ -1538,11 +1112,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "Th0r114b3/post-exploit/patchfinder64og.c"
-            timestampString = "572135063.46953"
+            timestampString = "572241048.26977"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "983"
-            endingLineNumber = "983"
+            startingLineNumber = "951"
+            endingLineNumber = "951"
             landmarkName = "find_zone_map_ref"
             landmarkType = "9">
          </BreakpointContent>
@@ -1554,11 +1128,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "Th0r114b3/post-exploit/remap_tfp_set_hsp.c"
-            timestampString = "572135063.469583"
+            timestampString = "572311128.55031"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "172"
-            endingLineNumber = "172"
+            startingLineNumber = "131"
+            endingLineNumber = "131"
             landmarkName = "remap_tfp0_set_hsp4"
             landmarkType = "9">
          </BreakpointContent>
@@ -1570,43 +1144,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "Th0r114b3/post-exploit/remap_tfp_set_hsp.c"
-            timestampString = "572135063.469648"
+            timestampString = "572311128.55038"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "174"
-            endingLineNumber = "174"
-            landmarkName = "remap_tfp0_set_hsp4"
-            landmarkType = "9">
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            shouldBeEnabled = "Yes"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "Th0r114b3/post-exploit/remap_tfp_set_hsp.c"
-            timestampString = "572135063.469714"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "123"
-            endingLineNumber = "123"
-            landmarkName = "remap_tfp0_set_hsp4"
-            landmarkType = "9">
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            shouldBeEnabled = "Yes"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "Th0r114b3/post-exploit/remap_tfp_set_hsp.c"
-            timestampString = "572135063.4697911"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "120"
-            endingLineNumber = "120"
+            startingLineNumber = "133"
+            endingLineNumber = "133"
             landmarkName = "remap_tfp0_set_hsp4"
             landmarkType = "9">
          </BreakpointContent>
@@ -1618,7 +1160,7 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "Th0r114b3/post-exploit/utilities/kutils.c"
-            timestampString = "572135063.469862"
+            timestampString = "572225739.373938"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "26"
@@ -1630,59 +1172,11 @@
       <BreakpointProxy
          BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
          <BreakpointContent
-            shouldBeEnabled = "Yes"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "Th0r114b3/post-exploit/remap_tfp_set_hsp.c"
-            timestampString = "572135063.470013"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "122"
-            endingLineNumber = "122"
-            landmarkName = "remap_tfp0_set_hsp4"
-            landmarkType = "9">
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            shouldBeEnabled = "Yes"
+            shouldBeEnabled = "No"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "Th0r114b3/exploit/vouch_4ya/kernel_memory.c"
-            timestampString = "572135063.470073"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "34"
-            endingLineNumber = "34"
-            landmarkName = "kernel_ipc_port_lookup"
-            landmarkType = "9">
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            shouldBeEnabled = "Yes"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "Th0r114b3/post-exploit/remap_tfp_set_hsp.c"
-            timestampString = "572135063.47013"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "126"
-            endingLineNumber = "126"
-            landmarkName = "remap_tfp0_set_hsp4"
-            landmarkType = "9">
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            shouldBeEnabled = "Yes"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "Th0r114b3/exploit/vouch_4ya/kernel_memory.c"
-            timestampString = "572135063.470185"
+            timestampString = "572310663.690089"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "50"
@@ -1794,7 +1288,7 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "Th0r114b3/post-exploit/utilities/apfs_util.c"
-            timestampString = "572135063.470528"
+            timestampString = "572207327.745478"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "144"
@@ -1810,7 +1304,7 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "Th0r114b3/post-exploit/utilities/apfs_util.c"
-            timestampString = "572135063.470585"
+            timestampString = "572207327.746223"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "130"
@@ -1826,7 +1320,7 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "Th0r114b3/post-exploit/utilities/apfs_util.c"
-            timestampString = "572135063.470636"
+            timestampString = "572207327.746419"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "116"
@@ -1842,7 +1336,7 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "Th0r114b3/post-exploit/utilities/apfs_util.c"
-            timestampString = "572135063.470687"
+            timestampString = "572207327.7465841"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "102"
@@ -1858,7 +1352,7 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "Th0r114b3/post-exploit/utilities/apfs_util.c"
-            timestampString = "572135063.470737"
+            timestampString = "572207327.746689"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "88"
@@ -1874,7 +1368,7 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "Th0r114b3/post-exploit/utilities/apfs_util.c"
-            timestampString = "572135063.470786"
+            timestampString = "572207327.746841"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "72"
@@ -1890,7 +1384,7 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "Th0r114b3/post-exploit/utilities/apfs_util.c"
-            timestampString = "572135063.470836"
+            timestampString = "572207327.74703"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "76"
@@ -1906,7 +1400,7 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "Th0r114b3/post-exploit/utilities/apfs_util.c"
-            timestampString = "572135063.470884"
+            timestampString = "572207327.747146"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "77"
@@ -1922,7 +1416,7 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "Th0r114b3/post-exploit/utilities/apfs_util.c"
-            timestampString = "572135063.470934"
+            timestampString = "572207327.747309"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "82"
@@ -1938,7 +1432,7 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "Th0r114b3/post-exploit/utilities/apfs_util.c"
-            timestampString = "572135063.4709851"
+            timestampString = "572207327.747566"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "43"
@@ -1954,7 +1448,7 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "Th0r114b3/post-exploit/utilities/apfs_util.c"
-            timestampString = "572135063.471034"
+            timestampString = "572207327.747705"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "40"
@@ -1970,7 +1464,7 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "Th0r114b3/post-exploit/utilities/apfs_util.c"
-            timestampString = "572135063.471086"
+            timestampString = "572207327.74788"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "38"
@@ -1986,7 +1480,7 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "Th0r114b3/post-exploit/utilities/apfs_util.c"
-            timestampString = "572135063.471136"
+            timestampString = "572207327.748008"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "35"
@@ -2002,7 +1496,7 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "Th0r114b3/post-exploit/utilities/apfs_util.c"
-            timestampString = "572135063.471184"
+            timestampString = "572207327.74818"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "30"
@@ -2014,15 +1508,207 @@
       <BreakpointProxy
          BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
          <BreakpointContent
-            shouldBeEnabled = "Yes"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Th0r114b3/post-exploit/rootfs_remountog.c"
+            timestampString = "572298505.937456"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "123"
+            endingLineNumber = "123"
+            landmarkName = "remountRootAsRW"
+            landmarkType = "9">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Th0r114b3/post-exploit/rootfs_remountog.c"
+            timestampString = "572298505.9375089"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "120"
+            endingLineNumber = "120"
+            landmarkName = "remountRootAsRW"
+            landmarkType = "9">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Th0r114b3/post-exploit/rootfs_remountog.c"
+            timestampString = "572298505.937559"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "121"
+            endingLineNumber = "121"
+            landmarkName = "remountRootAsRW"
+            landmarkType = "9">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Th0r114b3/post-exploit/rootfs_remountog.c"
+            timestampString = "572298505.937606"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "167"
+            endingLineNumber = "167"
+            landmarkName = "remountRootAsRW"
+            landmarkType = "9">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Th0r114b3/post-exploit/rootfs_remountog.c"
+            timestampString = "572298505.937655"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "170"
+            endingLineNumber = "170"
+            landmarkName = "remountRootAsRW"
+            landmarkType = "9">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Th0r114b3/post-exploit/rootfs_remountog.c"
+            timestampString = "572298505.937703"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "117"
+            endingLineNumber = "117"
+            landmarkName = "remountRootAsRW"
+            landmarkType = "9">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Th0r114b3/post-exploit/rootfs_remountog.c"
+            timestampString = "572298505.937752"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "126"
+            endingLineNumber = "126"
+            landmarkName = "remountRootAsRW"
+            landmarkType = "9">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Th0r114b3/post-exploit/rootfs_remountog.c"
+            timestampString = "572298505.937799"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "131"
+            endingLineNumber = "131"
+            landmarkName = "remountRootAsRW"
+            landmarkType = "9">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Th0r114b3/post-exploit/rootfs_remountog.c"
+            timestampString = "572298505.9378459"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "146"
+            endingLineNumber = "146"
+            landmarkName = "remountRootAsRW"
+            landmarkType = "9">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Th0r114b3/exploit/vouch_4ya/kernel_memory.c"
+            timestampString = "572310663.6907001"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "34"
+            endingLineNumber = "34"
+            landmarkName = "kernel_ipc_port_lookup"
+            landmarkType = "9">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "No"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "Th0r114b3/post-exploit/electra.c"
-            timestampString = "572135063.471388"
+            timestampString = "572311411.272859"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "309"
-            endingLineNumber = "309"
+            startingLineNumber = "81"
+            endingLineNumber = "81"
+            landmarkName = "start_Th0r"
+            landmarkType = "9">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Th0r114b3/post-exploit/electra.c"
+            timestampString = "572311411.273347"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "84"
+            endingLineNumber = "84"
+            landmarkName = "start_Th0r"
+            landmarkType = "9">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Th0r114b3/post-exploit/electra.c"
+            timestampString = "572311411.2737"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "86"
+            endingLineNumber = "86"
             landmarkName = "start_Th0r"
             landmarkType = "9">
          </BreakpointContent>
@@ -2034,60 +1720,12 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "Th0r114b3/post-exploit/electra.c"
-            timestampString = "572135063.47145"
+            timestampString = "572311411.274079"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "311"
-            endingLineNumber = "311"
+            startingLineNumber = "1065"
+            endingLineNumber = "1065"
             landmarkName = "start_Th0r"
-            landmarkType = "9">
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            shouldBeEnabled = "Yes"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "Th0r114b3/post-exploit/rootfs_remountog.c"
-            timestampString = "572135063.471506"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "165"
-            endingLineNumber = "165"
-            landmarkName = "remountRootAsRW"
-            landmarkType = "9">
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            shouldBeEnabled = "Yes"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "Th0r114b3/post-exploit/rootfs_remountog.c"
-            timestampString = "572135063.472031"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "162"
-            endingLineNumber = "162"
-            landmarkName = "remountRootAsRW"
-            landmarkType = "9">
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            shouldBeEnabled = "Yes"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "Th0r114b3/post-exploit/rootfs_remountog.c"
-            timestampString = "572135063.472454"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "163"
-            endingLineNumber = "163"
-            landmarkName = "remountRootAsRW"
             landmarkType = "9">
          </BreakpointContent>
       </BreakpointProxy>
@@ -2098,11 +1736,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "Th0r114b3/post-exploit/electra.c"
-            timestampString = "572135063.472894"
+            timestampString = "572311411.2744139"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "306"
-            endingLineNumber = "306"
+            startingLineNumber = "320"
+            endingLineNumber = "320"
             landmarkName = "start_Th0r"
             landmarkType = "9">
          </BreakpointContent>
@@ -2113,13 +1751,629 @@
             shouldBeEnabled = "Yes"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
+            filePath = "Th0r114b3/post-exploit/electra.c"
+            timestampString = "572311411.274765"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "508"
+            endingLineNumber = "508"
+            landmarkName = "start_Th0r"
+            landmarkType = "9">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Th0r114b3/post-exploit/electra.c"
+            timestampString = "572311411.2751319"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "117"
+            endingLineNumber = "117"
+            landmarkName = "start_Th0r"
+            landmarkType = "9">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Th0r114b3/app/controllers/ViewController.m"
+            timestampString = "572311411.275498"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "328"
+            endingLineNumber = "328"
+            landmarkName = "-viewDidLoad"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Th0r114b3/app/controllers/ViewController.m"
+            timestampString = "572311411.27557"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "321"
+            endingLineNumber = "321"
+            landmarkName = "-viewDidLoad"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Th0r114b3/post-exploit/electra.c"
+            timestampString = "572311411.275664"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "122"
+            endingLineNumber = "122"
+            landmarkName = "start_Th0r"
+            landmarkType = "9">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Th0r114b3/post-exploit/electra.c"
+            timestampString = "572311411.276026"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "121"
+            endingLineNumber = "121"
+            landmarkName = "start_Th0r"
+            landmarkType = "9">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Th0r114b3/exploit/common/offsets.m"
+            timestampString = "572311411.276407"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "183"
+            endingLineNumber = "183"
+            landmarkName = "koffset"
+            landmarkType = "9">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Th0r114b3/exploit/vouch_4ya/voucher_swap.c"
+            timestampString = "572303558.899479"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "787"
+            endingLineNumber = "787"
+            landmarkName = "voucher_swap"
+            landmarkType = "9">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Th0r114b3/app/controllers/ViewController.m"
+            timestampString = "572311411.276497"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "1879"
+            endingLineNumber = "1879"
+            landmarkName = "-doit:"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Th0r114b3/app/controllers/ViewController.m"
+            timestampString = "572311411.276565"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "1712"
+            endingLineNumber = "1712"
+            landmarkName = "-doit:"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Th0r114b3/app/controllers/ViewController.m"
+            timestampString = "572311411.276629"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "1719"
+            endingLineNumber = "1719"
+            landmarkName = "-doit:"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Th0r114b3/exploit/vouch_4ya/voucher_swap.c"
+            timestampString = "572303558.900097"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "1129"
+            endingLineNumber = "1129"
+            landmarkName = "voucher_swap"
+            landmarkType = "9">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Th0r114b3/exploit/v1ntex_sploit/v1ntex_exploit.m"
+            timestampString = "572247930.9245991"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "1136"
+            endingLineNumber = "1136"
+            landmarkName = "v1ntex"
+            landmarkType = "9">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Th0r114b3/exploit/v1ntex_sploit/v1ntex_exploit.m"
+            timestampString = "572247930.925946"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "1299"
+            endingLineNumber = "1299"
+            landmarkName = "v1ntex"
+            landmarkType = "9">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Th0r114b3/exploit/v1ntex_sploit/v1ntex_exploit.m"
+            timestampString = "572247930.926823"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "1288"
+            endingLineNumber = "1288"
+            landmarkName = "v1ntex"
+            landmarkType = "9">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Th0r114b3/exploit/v1ntex_sploit/v1ntex_exploit.m"
+            timestampString = "572247930.927573"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "1147"
+            endingLineNumber = "1147"
+            landmarkName = "v1ntex"
+            landmarkType = "9">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Th0r114b3/exploit/v1ntex_sploit/v1ntex_exploit.m"
+            timestampString = "572247930.928309"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "1308"
+            endingLineNumber = "1308"
+            landmarkName = "v1ntex"
+            landmarkType = "9">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Th0r114b3/exploit/v1ntex_sploit/v1ntex_exploit.m"
+            timestampString = "572247930.929131"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "1138"
+            endingLineNumber = "1138"
+            landmarkName = "v1ntex"
+            landmarkType = "9">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Th0r114b3/exploit/v1ntex_sploit/v1ntex_exploit.m"
+            timestampString = "572247930.929818"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "587"
+            endingLineNumber = "587"
+            landmarkName = "kread32_slow"
+            landmarkType = "9">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Th0r114b3/exploit/v1ntex_sploit/v1ntex_exploit.m"
+            timestampString = "572247930.93133"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "1070"
+            endingLineNumber = "1070"
+            landmarkName = "v1ntex"
+            landmarkType = "9">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Th0r114b3/exploit/v1ntex_sploit/v1ntex_exploit.m"
+            timestampString = "572247930.932108"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "1075"
+            endingLineNumber = "1075"
+            landmarkName = "v1ntex"
+            landmarkType = "9">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Th0r114b3/exploit/v1ntex_sploit/v1ntex_exploit.m"
+            timestampString = "572247930.932892"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "1082"
+            endingLineNumber = "1082"
+            landmarkName = "v1ntex"
+            landmarkType = "9">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Th0r114b3/exploit/v1ntex_sploit/v1ntex_exploit.m"
+            timestampString = "572247930.933846"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "1103"
+            endingLineNumber = "1103"
+            landmarkName = "v1ntex"
+            landmarkType = "9">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Th0r114b3/exploit/v1ntex_sploit/exploit.m"
+            timestampString = "572247930.934695"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "1112"
+            endingLineNumber = "1112"
+            landmarkName = "v3ntex"
+            landmarkType = "9">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Th0r114b3/exploit/v1ntex_sploit/v1ntex_exploit.m"
+            timestampString = "572247930.935594"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "254"
+            endingLineNumber = "254"
+            landmarkName = "unknown"
+            landmarkType = "0">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Th0r114b3/exploit/v1ntex_sploit/exploit.m"
+            timestampString = "572247930.936258"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "778"
+            endingLineNumber = "778"
+            landmarkName = "v3ntex"
+            landmarkType = "9">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Th0r114b3/exploit/vouch_4ya/voucher_swap.c"
+            timestampString = "572303558.9004641"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "1569"
+            endingLineNumber = "1569"
+            landmarkName = "voucher_swap"
+            landmarkType = "9">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Th0r114b3/app/controllers/ViewController.m"
+            timestampString = "572311411.277022"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "1777"
+            endingLineNumber = "1777"
+            landmarkName = "-doit:"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Th0r114b3/app/controllers/ViewController.m"
+            timestampString = "572311411.277096"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "1865"
+            endingLineNumber = "1865"
+            landmarkName = "-doit:"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Th0r114b3/app/controllers/ViewController.m"
+            timestampString = "572311411.277159"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "1860"
+            endingLineNumber = "1860"
+            landmarkName = "-doit:"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Th0r114b3/app/controllers/ViewController.m"
+            timestampString = "572311411.277221"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "1839"
+            endingLineNumber = "1839"
+            landmarkName = "-doit:"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Th0r114b3/app/controllers/ViewController.m"
+            timestampString = "572311411.277305"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "1727"
+            endingLineNumber = "1727"
+            landmarkName = "-doit:"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Th0r114b3/post-exploit/utilities/kexecute.c"
+            timestampString = "572311411.277367"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "120"
+            endingLineNumber = "120"
+            landmarkName = "kexecute"
+            landmarkType = "9">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
             filePath = "Th0r114b3/post-exploit/rootfs_remountog.c"
-            timestampString = "572135063.472972"
+            timestampString = "572298505.940205"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "75"
+            endingLineNumber = "75"
+            landmarkName = "remountRootAsRW_old"
+            landmarkType = "9">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Th0r114b3/exploit/empty_list/vfs_sploit.c"
+            timestampString = "572311411.277447"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "1078"
+            endingLineNumber = "1078">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Th0r114b3/exploit/empty_list/vfs_sploit.c"
+            timestampString = "572311411.277512"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "1054"
+            endingLineNumber = "1054">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Th0r114b3/exploit/empty_list/vfs_sploit.c"
+            timestampString = "572311411.277571"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "1022"
+            endingLineNumber = "1022"
+            landmarkName = "vfs_sploit"
+            landmarkType = "9">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Th0r114b3/exploit/empty_list/vfs_sploit.c"
+            timestampString = "572311411.2776279"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "1263"
+            endingLineNumber = "1263">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Th0r114b3/exploit/empty_list/vfs_sploit.c"
+            timestampString = "572311411.277685"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "1037"
+            endingLineNumber = "1037">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Th0r114b3/exploit/common/offsets.m"
+            timestampString = "572311411.27774"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "209"
             endingLineNumber = "209"
-            landmarkName = "remountRootAsRW"
+            landmarkName = "offsets_init"
             landmarkType = "9">
          </BreakpointContent>
       </BreakpointProxy>
@@ -2129,13 +2383,13 @@
             shouldBeEnabled = "Yes"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
-            filePath = "Th0r114b3/post-exploit/rootfs_remountog.c"
-            timestampString = "572135063.473411"
+            filePath = "Th0r114b3/exploit/common/offsets.m"
+            timestampString = "572311411.277789"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "212"
             endingLineNumber = "212"
-            landmarkName = "remountRootAsRW"
+            landmarkName = "offsets_init"
             landmarkType = "9">
          </BreakpointContent>
       </BreakpointProxy>
@@ -2145,13 +2399,121 @@
             shouldBeEnabled = "Yes"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
-            filePath = "Th0r114b3/post-exploit/rootfs_remountog.c"
-            timestampString = "572135063.473816"
+            filePath = "Th0r114b3/app/controllers/ViewController.m"
+            timestampString = "572311411.27784"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "159"
-            endingLineNumber = "159"
-            landmarkName = "remountRootAsRW"
+            startingLineNumber = "1892"
+            endingLineNumber = "1892"
+            landmarkName = "-doit:"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Th0r114b3/exploit/empty_list/vfs_sploit.c"
+            timestampString = "572311411.2779"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "1306"
+            endingLineNumber = "1306">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Th0r114b3/exploit/empty_list/vfs_sploit.c"
+            timestampString = "572311411.277957"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "1422"
+            endingLineNumber = "1422">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Th0r114b3/app/controllers/ViewController.m"
+            timestampString = "572311411.2780139"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "1890"
+            endingLineNumber = "1890"
+            landmarkName = "-doit:"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Th0r114b3/app/controllers/ViewController.m"
+            timestampString = "572311411.278074"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "1885"
+            endingLineNumber = "1885"
+            landmarkName = "-doit:"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  shouldBeEnabled = "No"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "__23-[ViewController doit:]_block_invoke"
+                  moduleName = "Th0r"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/pwned0sxever/Downloads/Th0r_ALL_iOS11_FINAL/Th0r114b3/app/controllers/ViewController.m"
+                  timestampString = "572305519.570792"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "1880"
+                  endingLineNumber = "1880"
+                  offsetFromSymbolStart = "5188">
+               </Location>
+               <Location
+                  shouldBeEnabled = "No"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "__23-[ViewController doit:]_block_invoke.483"
+                  moduleName = "Th0r"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/pwned0sxever/Downloads/Th0r_ALL_iOS11_FINAL/Th0r114b3/app/controllers/ViewController.m"
+                  timestampString = "572305519.574234"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "1881"
+                  endingLineNumber = "1881"
+                  offsetFromSymbolStart = "64">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Th0r114b3/app/controllers/ViewController.m"
+            timestampString = "572311411.278133"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "935"
+            endingLineNumber = "935"
+            landmarkName = "iosurface_die"
             landmarkType = "9">
          </BreakpointContent>
       </BreakpointProxy>
@@ -2161,13 +2523,29 @@
             shouldBeEnabled = "Yes"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
-            filePath = "Th0r114b3/post-exploit/rootfs_remountog.c"
-            timestampString = "572135063.474128"
+            filePath = "Th0r114b3/post-exploit/utilities/kexecute.c"
+            timestampString = "572311411.278216"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "168"
-            endingLineNumber = "168"
-            landmarkName = "remountRootAsRW"
+            startingLineNumber = "12"
+            endingLineNumber = "12"
+            landmarkName = "prepare_user_client"
+            landmarkType = "9">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Th0r114b3/post-exploit/electra.c"
+            timestampString = "572311411.278267"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "88"
+            endingLineNumber = "88"
+            landmarkName = "start_Th0r"
             landmarkType = "9">
          </BreakpointContent>
       </BreakpointProxy>
@@ -2177,13 +2555,13 @@
             shouldBeEnabled = "Yes"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
-            filePath = "Th0r114b3/post-exploit/rootfs_remountog.c"
-            timestampString = "572135063.474431"
+            filePath = "Th0r114b3/post-exploit/electra.c"
+            timestampString = "572311411.2786061"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "173"
-            endingLineNumber = "173"
-            landmarkName = "remountRootAsRW"
+            startingLineNumber = "641"
+            endingLineNumber = "641"
+            landmarkName = "start_Th0r"
             landmarkType = "9">
          </BreakpointContent>
       </BreakpointProxy>
@@ -2193,13 +2571,323 @@
             shouldBeEnabled = "Yes"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
-            filePath = "Th0r114b3/post-exploit/rootfs_remountog.c"
-            timestampString = "572135063.474754"
+            filePath = "Th0r114b3/post-exploit/electra.c"
+            timestampString = "572311411.278936"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "188"
-            endingLineNumber = "188"
-            landmarkName = "remountRootAsRW"
+            startingLineNumber = "707"
+            endingLineNumber = "707"
+            landmarkName = "start_Th0r"
+            landmarkType = "9">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Th0r114b3/post-exploit/electra.c"
+            timestampString = "572311411.2792799"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "727"
+            endingLineNumber = "727"
+            landmarkName = "start_Th0r"
+            landmarkType = "9">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Th0r114b3/post-exploit/electra.c"
+            timestampString = "572311411.279615"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "743"
+            endingLineNumber = "743"
+            landmarkName = "start_Th0r"
+            landmarkType = "9">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Th0r114b3/post-exploit/electra.c"
+            timestampString = "572311411.279948"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "716"
+            endingLineNumber = "716"
+            landmarkName = "start_Th0r"
+            landmarkType = "9">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Th0r114b3/exploit/common/offsets.m"
+            timestampString = "572311411.280287"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "191"
+            endingLineNumber = "191"
+            landmarkName = "offsets_init"
+            landmarkType = "9">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Th0r114b3/post-exploit/electra.c"
+            timestampString = "572311411.280344"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "659"
+            endingLineNumber = "659"
+            landmarkName = "start_Th0r"
+            landmarkType = "9">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Th0r114b3/post-exploit/electra.c"
+            timestampString = "572311411.280731"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "679"
+            endingLineNumber = "679"
+            landmarkName = "start_Th0r"
+            landmarkType = "9">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Th0r114b3/post-exploit/electra.c"
+            timestampString = "572311411.281059"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "697"
+            endingLineNumber = "697"
+            landmarkName = "start_Th0r"
+            landmarkType = "9">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Th0r114b3/post-exploit/electra.c"
+            timestampString = "572311411.281383"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "717"
+            endingLineNumber = "717"
+            landmarkName = "start_Th0r"
+            landmarkType = "9">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Th0r114b3/post-exploit/electra.c"
+            timestampString = "572311411.281706"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "718"
+            endingLineNumber = "718"
+            landmarkName = "start_Th0r"
+            landmarkType = "9">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Th0r114b3/exploit/empty_list/vfs_sploit.c"
+            timestampString = "572311411.282053"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "1319"
+            endingLineNumber = "1319">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Th0r114b3/exploit/empty_list/vfs_sploit.c"
+            timestampString = "572311411.2821389"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "1315"
+            endingLineNumber = "1315">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Th0r114b3/post-exploit/utilities/kexecute.c"
+            timestampString = "572311411.2822"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "41"
+            endingLineNumber = "41"
+            landmarkName = "init_kexecute"
+            landmarkType = "9">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Th0r114b3/post-exploit/utilities/kexecute.c"
+            timestampString = "572311411.282277"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "44"
+            endingLineNumber = "44"
+            landmarkName = "init_kexecute"
+            landmarkType = "9">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Th0r114b3/post-exploit/utilities/exploit_additions.c"
+            timestampString = "572311411.2823319"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "107"
+            endingLineNumber = "107"
+            landmarkName = "find_port"
+            landmarkType = "9">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Th0r114b3/app/controllers/ViewController.m"
+            timestampString = "572311411.282389"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "1831"
+            endingLineNumber = "1831"
+            landmarkName = "-doit:"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Th0r114b3/app/controllers/ViewController.m"
+            timestampString = "572311411.282445"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "1829"
+            endingLineNumber = "1829"
+            landmarkName = "-doit:"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Th0r114b3/exploit/empty_list/vfs_sploit.c"
+            timestampString = "572311411.282497"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "1432"
+            endingLineNumber = "1432">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Th0r114b3/exploit/empty_list/vfs_sploit.c"
+            timestampString = "572311411.282547"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "1309"
+            endingLineNumber = "1309">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Th0r114b3/exploit/empty_list/vfs_sploit.c"
+            timestampString = "572311411.282595"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "1261"
+            endingLineNumber = "1261">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Th0r114b3/post-exploit/remap_tfp_set_hsp.c"
+            timestampString = "572311128.563212"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "122"
+            endingLineNumber = "122"
+            landmarkName = "remap_tfp0_set_hsp4"
             landmarkType = "9">
          </BreakpointContent>
       </BreakpointProxy>

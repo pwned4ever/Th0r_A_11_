@@ -5,9 +5,16 @@
 #include "../../post-exploit/electra.h"
 
 #include "../../headers/reboot.h"
+#include "../../exploit/v1ntex_sploit/v1ntex_exploit.h"
+#include "../../exploit/v1ntex_sploit/v1ntex_offsets.h"
+
+#include "../../exploit/v1ntex_sploit/exploit.h"
+#include "../../exploit/vouch_4ya/voucher_swap.h"
 #include "../../exploit/multi_path/multi_path_sploit.h"
 #include "../../exploit/empty_list/vfs_sploit.h"
+#include "../../exploit/async_waker/async_wake.h"
 #include "../../post-exploit/electra_objc.h"
+#include "../../post-exploit/patchfinder64og.h"
 
 #include "../../exploit/vouch_4ya/kernel_memory.h"
 #include "../../exploit/common/offsets.h"
@@ -17,8 +24,9 @@
 #include "../../post-exploit/utilities/amfi_utils.h"
 #include "../../post-exploit/utilities/kutils.h"
 #include "Foundation/Foundation.h"
-#include "../../exploit/vouch_4ya/voucher_swap.h"
 #include "../../post-exploit/utilities/KernelMemory.h"
+kern_return_t mach_vm_read_overwrite(vm_map_t target_task, mach_vm_address_t address, mach_vm_size_t size, mach_vm_address_t data, mach_vm_size_t *outsize);
+
 
 @interface ViewController ()
 @end
@@ -43,6 +51,50 @@ static ViewController *currentViewController;
 }
 
 // thx DoubleH3lix - thanks t1hmstar
+
+void DumpHex(const void* data, size_t size) {
+    char ascii[17];
+    size_t i, j;
+    ascii[16] = '\0';
+    for (i = 0; i < size; ++i) {
+        printf("%02X ", ((unsigned char*)data)[i]);
+        if (((unsigned char*)data)[i] >= ' ' && ((unsigned char*)data)[i] <= '~') {
+            ascii[i % 16] = ((unsigned char*)data)[i];
+        } else {
+            ascii[i % 16] = '.';
+        }
+        if ((i+1) % 8 == 0 || i+1 == size) {
+            printf(" ");
+            if ((i+1) % 16 == 0) {
+                printf("|  %s \n", ascii);
+            } else if (i+1 == size) {
+                ascii[(i+1) % 16] = '\0';
+                if ((i+1) % 16 <= 8) {
+                    printf(" ");
+                }
+                for (j = (i+1) % 16; j < 16; ++j) {
+                    printf("   ");
+                }
+                printf("|  %s \n", ascii);
+            }
+        }
+    }
+}
+
+kern_return_t dumpSomeKernel(task_t tfp0, kptr_t kbase, void *data){
+    kern_return_t err = 0;
+    char buf[0x1000] = {};
+    
+    mach_vm_size_t rSize = 0;
+    err = mach_vm_read_overwrite(tfp0, kbase, sizeof(buf), buf, &rSize);
+    
+    printf("some kernel:\n");
+    DumpHex(buf, sizeof(buf));
+    
+    printf("lol\n");
+    exit(0); //we are no shenanigans!
+    return err;
+}
 
 double uptime(){
     struct timeval boottime;
@@ -69,7 +121,7 @@ double uptime(){
     NSString *music=[[NSBundle mainBundle]pathForResource:@"LuckyU" ofType:@"mp3"];
     audioPlayer1=[[AVAudioPlayer alloc]initWithContentsOfURL:[NSURL fileURLWithPath:music]error:NULL];
     audioPlayer1.delegate=self;
-    audioPlayer1.volume=-9;
+    audioPlayer1.volume=1;
     audioPlayer1.numberOfLoops=-1;
     [audioPlayer1 play];
     //[audioPlayer1 stop];}
@@ -98,7 +150,7 @@ double uptime(){
         UIAlertController *alertController = [UIAlertController alertControllerWithTitle:NSLocalizedString(@"𝓢Ⓗ⒜𝕽ᴱ JB Remover?", nil) message:NSLocalizedString(@"Are you sure you want to Share JB Remover?💣", nil) preferredStyle:UIAlertControllerStyleAlert];
         UIAlertAction *OK = [UIAlertAction actionWithTitle:NSLocalizedString(@"Sharing is caring", nil) style:UIAlertActionStyleDefault handler:^(UIAlertAction * _Nonnull action) {
             dispatch_async(dispatch_get_main_queue(), ^{
-                UIActivityViewController *activityViewController = [[UIActivityViewController alloc] initWithActivityItems:@[[NSString stringWithFormat:localize(@"I'm using Th0r 2 END GAME - Jailbreak Remover Toolkit for iOS 11.0 - 11.4.1, Updated 02/17/19 5:30PM-EDT. By:@%@ 🍻, to remove the jailbreak on my %@ iOS %@. You can download it now @ %@" ), @pwned4ever_TEAM_TWITTER_HANDLE, [NSString stringWithUTF8String:u.machine],[[UIDevice currentDevice] systemVersion], @pwned4ever_URL]] applicationActivities:nil];
+                UIActivityViewController *activityViewController = [[UIActivityViewController alloc] initWithActivityItems:@[[NSString stringWithFormat:localize(@"I'm using Th0r 2 END GAME - Jailbreak Remover Toolkit for iOS 11.0 - 11.4.1, Updated 02/19/19 6:30PM-EDT. By:@%@ 🍻, to remove the jailbreak on my %@ iOS %@. You can download it now @ %@" ), @pwned4ever_TEAM_TWITTER_HANDLE, [NSString stringWithUTF8String:u.machine],[[UIDevice currentDevice] systemVersion], @pwned4ever_URL]] applicationActivities:nil];
                 activityViewController.excludedActivityTypes = @[UIActivityTypePrint, UIActivityTypeCopyToPasteboard, UIActivityTypeAssignToContact, UIActivityTypeSaveToCameraRoll, UIActivityTypeAirDrop, UIActivityTypeOpenInIBooks, UIActivityTypeMarkupAsPDF];
                 if ([activityViewController respondsToSelector:@selector(popoverPresentationController)] ) {
                     activityViewController.popoverPresentationController.sourceView = _jailbreak;
@@ -134,7 +186,7 @@ double uptime(){
         UIAlertController *alertController = [UIAlertController alertControllerWithTitle:NSLocalizedString(@"Wanna Share Th0r Jailbreak", nil) message:NSLocalizedString(@"𝓢Ⓗ⒜𝕽ᴱ Th0r 👍🏽 Jailbreak?", nil) preferredStyle:UIAlertControllerStyleAlert];UIAlertAction *OK = [UIAlertAction actionWithTitle:NSLocalizedString(@"Ya of course", nil) style:UIAlertActionStyleDefault handler:^(UIAlertAction * _Nonnull action) {
             dispatch_async(dispatch_get_main_queue(), ^{
                 [self.jailbreak setEnabled:YES];
-                UIActivityViewController *activityViewController = [[UIActivityViewController alloc] initWithActivityItems:@[[NSString stringWithFormat:localize(@"I'm using Th0r 2 END GAME - Jailbreak Toolkit for iOS 11.0 - 11.4.1, Updated 02/17/19 5:30PM-EDT. By:@%@ 🍻, to jailbreak my %@ iOS %@. You can download it now @ %@" ), @pwned4ever_TEAM_TWITTER_HANDLE, [NSString stringWithUTF8String:u.machine],[[UIDevice currentDevice] systemVersion], @pwned4ever_URL]] applicationActivities:nil];
+                UIActivityViewController *activityViewController = [[UIActivityViewController alloc] initWithActivityItems:@[[NSString stringWithFormat:localize(@"I'm using Th0r 2 END GAME - Jailbreak Toolkit for iOS 11.0 - 11.4.1, Updated 02/19/19 6:30PM-EDT. By:@%@ 🍻, to jailbreak my %@ iOS %@. You can download it now @ %@" ), @pwned4ever_TEAM_TWITTER_HANDLE, [NSString stringWithUTF8String:u.machine],[[UIDevice currentDevice] systemVersion], @pwned4ever_URL]] applicationActivities:nil];
                 activityViewController.excludedActivityTypes = @[UIActivityTypePrint, UIActivityTypeCopyToPasteboard, UIActivityTypeAssignToContact, UIActivityTypeSaveToCameraRoll, UIActivityTypeAirDrop, UIActivityTypeOpenInIBooks, UIActivityTypeMarkupAsPDF];
                 if ([activityViewController respondsToSelector:@selector(popoverPresentationController)] ) {
                     activityViewController.popoverPresentationController.sourceView = _jailbreak;
@@ -173,7 +225,7 @@ double uptime(){
     NSString *music=[[NSBundle mainBundle]pathForResource:@"LuckyU" ofType:@"mp3"];
     audioPlayer1=[[AVAudioPlayer alloc]initWithContentsOfURL:[NSURL fileURLWithPath:music]error:NULL];
     audioPlayer1.delegate=self;
-    audioPlayer1.volume=-3;
+    audioPlayer1.volume=1;
     audioPlayer1.numberOfLoops=-1;
     [audioPlayer1 play];
     /**/
@@ -825,6 +877,23 @@ double uptime(){
         [_jailbreak setEnabled:NO];
         
         enable3DTouch = NO;
+        goto end;
+        
+    }
+    if(((checkjailbreakdRun == 0) && (checkpspawnhook == 0) && (checkth0rmarker == 0) && (checkuncovermarker == 0)) && (checkelectramarker == 0) && (checkJBRemoverMarker == 0)){
+        newTFcheckofCyforce = FALSE;
+        newTFcheckMyRemover4me = FALSE;
+        [_enableTweaks setEnabled:YES];
+        checkJBRemoverMarker = TRUE;
+        _pickviewarray = @[@"Jailbreak"];
+        
+        //[_jailbreak setTitleColor:localize(GL_BLUE) forState:UIControlStateNormal];
+        [_jailbreak setTitle:localize(@"Journey 2 gRoot?") forState:UIControlStateNormal];
+        [_jailbreak setEnabled:YES];
+        
+        enable3DTouch = YES;
+        goto end;
+
     }else {
         _pickviewarray = @[@"Remove JB"];
         [_jailbreak setTitle:localize(@"Remove JB?") forState:UIControlStateNormal];
@@ -916,6 +985,21 @@ void iosurface_die() {
     
     return;
 }
+#define MAX_KASLR_SLIDE 0x21000000
+#define KERNEL_SEARCH_ADDRESS 0xfffffff007004000
+
+kern_return_t exploit_callback_common(task_t kernel_task, kptr_t kbase, void *data) {
+    prepare_for_rw_with_fake_tfp0(kernel_task);
+    offsets_init();
+    uint64_t kernel_base = kbase;
+
+    uint64_t kernel_slide = (kernel_base - KERNEL_SEARCH_ADDRESS);
+    
+    return KERN_SUCCESS;
+}
+kern_return_t v1ntex_callback(task_t kernel_task, kptr_t kbase, void *data) {
+    return exploit_callback_common(kernel_task, kbase, data);
+}
 
 int vfs_die() {
     int fd = open("/", O_RDONLY);
@@ -956,29 +1040,9 @@ int vfs_die() {
                 printf("what testremover wannacheckforme is showing :%d\n", newTFcheckMyRemover4me);
 
                 printf("Restarting\n");
-                /*
-                NSString *msg = [NSString stringWithFormat:localize(@"FUCK REBOOT")];
-                dispatch_async(dispatch_get_main_queue(), ^{
-                    postProgress(msg);
-                });
-                sleep(1);
-                */
+  
                 [self.jailbreak setEnabled:YES];
-               /* postProgress(localize(@"Rebooting please 3"));
-                restarting();
-                [_jailbreak setTitle:localize(@"Rebooting wait 3") forState:UIControlStateNormal];
-                sleep(1);
-                postProgress(localize(@"Rebooting please 2"));
-                [_jailbreak setTitle:localize(@"Rebooting please 2") forState:UIControlStateNormal];
-                sleep(1);
-                NSString *msg1 = [NSString stringWithFormat:localize(@"FUCK 123 REBOOT")];
-                dispatch_async(dispatch_get_main_queue(), ^{
-                    postProgress(msg1);
-                });
-                postProgress(localize(@"Rebooting please 1"));
-                [_jailbreak setTitle:localize(@"Rebooting please 1") forState:UIControlStateNormal];
-                */
-                
+
                 vfs_die();
                // iosurface_die();
                 sleep(0.5);
@@ -1637,79 +1701,48 @@ end:
     BOOL shouldEnableTweaks = [_enableTweaks isOn];
     dispatch_async(dispatch_get_global_queue(DISPATCH_QUEUE_PRIORITY_HIGH, 0ul), ^{
     int ut = 0;
-    if (vm_kernel_page_size != 0x4000) {
+    mach_port_t tipsyPIEfp0 = MACH_PORT_NULL;
+    int exploitstatus = 0;
+        
+    if (vm_kernel_page_size == 0x4000) {
+        //1450.14 - 11.2
+        //1452.23 - 11.3.1
+        //1452.24 - 11.4
+        //
+        if (kCFCoreFoundationVersionNumber < 1450.14)/*less < than iOS 11.2?*/{
+            
+            [_jailbreak setTitle:localize(@"Async_wake sploit") forState:UIControlStateNormal];
+            tipsyPIEfp0 = get_kernel_memory_rw();//async_wwake();
+            printf("kenel page 16k - mach tfp0:%x\n",tipsyPIEfp0);
+            
+            goto end;
+        }else if (kCFCoreFoundationVersionNumber >= 1452.24) /*16k kernel less than ios 12 newer or equal to ios 11.4*/{
+            //kCFCoreFoundationVersionNumber < 1535.12 &&
+            [_jailbreak setTitle:localize(@"11.4 Voucher sploit") forState:UIControlStateNormal];
+            tipsyPIEfp0 = voucher_swap();
+            printf("kenel page 16k - mach tfp0:%x\n",tipsyPIEfp0);
+            
+            goto end;
+            /*16k kernel less than ios 12 newer than ios 11.2 works for all devices 11.2-11.4.1*/
+        }else if (kCFCoreFoundationVersionNumber >= 1450.14 && kCFCoreFoundationVersionNumber <= 1452.23) /*16k kernel less than ios 12 newer than ios 11.2*/{
+            //kCFCoreFoundationVersionNumber < 1535.12 &&
+            [_jailbreak setTitle:localize(@"Voucher sploit") forState:UIControlStateNormal];
+            //exploitstatus = vfs_sploit();
+            tipsyPIEfp0 = voucher_swap();
+            printf("kenel page 16k - mach tfp0:%x\n",tipsyPIEfp0);
+            
+            goto end;
+            /*16k kernel less than ios 12 newer than ios 11.2 works for all devices 11.2-11.4.1*/
+        }
+        
+        
+/////////////////////////////
+/////////////////////////////4k below
 
-        if (!strcmp(u.machine, "iPhone8,1") || (!strcmp(u.machine, "iPhone8,2"))) {
-            printf("i6s & 6s+ -----------\n");
-            
-            while ((ut = 99 - uptime()) > 0 ) {
-                NSString *msg = [NSString stringWithFormat:localize(@"%s %ds"),u.machine, ut+21];
-                dispatch_async(dispatch_get_main_queue(), ^{
-                    postProgress(msg);
-                });
-                sleep(1);
-            }
-        }else if (!strcmp(u.machine, "iPhone10,1") || (!strcmp(u.machine, "iPhone10,4") || (!strcmp(u.machine, "iPhone10,2") || (!strcmp(u.machine, "iPhone10,5"))))) {
-            printf("i8 & i8 + -----------\n");
-            while ((ut = 56 - uptime()) > 0 ) {
-                NSString *msg = [NSString stringWithFormat:localize(@"%s %ds"),u.machine, ut+4];
-                dispatch_async(dispatch_get_main_queue(), ^{
-                    postProgress(msg);
-                });
-                sleep(1);
-            }
-        }
-        else if (!strcmp(u.machine, "iPhone10,3") || (!strcmp(u.machine, "iPhone10,6"))) {
-            printf("iX wait 60 -----------\n");
-            while ((ut = 40 - uptime()) > 0 ) {
-                NSString *msg = [NSString stringWithFormat:localize(@"%s %ds"),u.machine, ut+20];
-                dispatch_async(dispatch_get_main_queue(), ^{
-                    postProgress(msg);
-                });
-                sleep(1);
-            }
-        }
-        
-        else if (!strcmp(u.machine, "iPhone9,1") || (!strcmp(u.machine, "iPhone9,3") || (!strcmp(u.machine, "iPhone9,2") || (!strcmp(u.machine, "iPhone9,4"))))) {
-            printf("i7 & i7 + -----------\n");
-            while ((ut = 39 - uptime()) > 0 ) {
-                NSString *msg = [NSString stringWithFormat:localize(@"%s %ds"),u.machine, ut+21];
-                dispatch_async(dispatch_get_main_queue(), ^{
-                    postProgress(msg);
-                });
-                sleep(1);
-            }
-            
-        }else if (!strcmp(u.machine, "iPhone8,4")) {
-            printf("iSE-----------\n");
-            while ((ut = 79 - uptime()) > 0 ) {
-                NSString *msg = [NSString stringWithFormat:localize(@"%s %ds"),u.machine, ut+21];
-                dispatch_async(dispatch_get_main_queue(), ^{
-                    postProgress(msg);
-                });
-                sleep(1);
-            }
-            
-        }else if (!strcmp(u.machine, "iPad7,1") || (!strcmp(u.machine, "iPad7,2") || (!strcmp(u.machine, "iPad7,4") || (!strcmp(u.machine, "iPad7,5") || (!strcmp(u.machine, "iPad6,3") || (!strcmp(u.machine, "iPad6,4") || (!strcmp(u.machine, "iPad6,7") || (!strcmp(u.machine, "iPad6,8"))))))))) {
-            printf("iPad Pro 9, 10 & 12 in 2nd gen -----------\n");
-            while ((ut = 39 - uptime()) > 0 ) {
-                NSString *msg = [NSString stringWithFormat:localize(@"%s %ds"),u.machine, ut+21];
-                dispatch_async(dispatch_get_main_queue(), ^{
-                    postProgress(msg);
-                });
-                sleep(1);
-            }
-        }
-        
-            /////////////////////////////
-            /////////////////////////////4k below
-        
-        else if (!strcmp(u.machine, "iPhone6,1") || (!strcmp(u.machine, "iPhone6,2") || (!strcmp(u.machine, "iPhone7,1") || (!strcmp(u.machine, "iPhone7,2"))))) {
+        /*else if (!strcmp(u.machine, "iPhone6,1") || (!strcmp(u.machine, "iPhone6,2") || (!strcmp(u.machine, "iPhone7,1") || (!strcmp(u.machine, "iPhone7,2"))))) {
             printf("i5s & i6  & 6+ -----------\n");
             printf("Hello %s ---------------\n", u.machine);
-            
             while ((ut = 60 - uptime()) > 0 ) {
-                
                 NSString *msg = [NSString
                                  stringWithFormat:localize(@"%s %ds"),u.machine, ut+20];
                 dispatch_async(dispatch_get_main_queue(), ^{
@@ -1718,45 +1751,130 @@ end:
                 sleep(1);
             }
         }
+        */
+     
+
         
-        else if (!strcmp(u.machine, "iPad5,3") || (!strcmp(u.machine, "iPad5,4") || (!strcmp(u.machine, "iPad4,2") || (!strcmp(u.machine, "iPad4,3"))))) {
-            printf("iPad air 1 & 2 -----------\n");
-            while ((ut = 99 - uptime()) > 0 ) {
-                NSString *msg = [NSString stringWithFormat:localize(@"%s %ds"),u.machine, ut+14];
-                dispatch_async(dispatch_get_main_queue(), ^{
-                    postProgress(msg);
-                });
-                sleep(1);
-            }
-            
-        }else if (!strcmp(u.machine, "iPad5,1") || (!strcmp(u.machine, "iPad5,2") || (!strcmp(u.machine, "iPad4,7") || (!strcmp(u.machine, "iPad4,8") || (!strcmp(u.machine, "iPad4,9")))))) {
-            printf("iPad mini 4 & 3 -----------\n");
-            
-            while ((ut = 116 - uptime()) > 0 ) {
-                
-                NSString *msg = [NSString stringWithFormat:localize(@"%s %ds"),u.machine, ut+4];
-                dispatch_async(dispatch_get_main_queue(), ^{
-                    postProgress(msg);
-                });
-                sleep(1);
-            }
-        }else if (!strcmp(u.machine, "iPod7,1")) {
-            printf("iPod 6 -----------\n");
-            while ((ut = 116 - uptime()) > 0 ) {
-                NSString *msg = [NSString stringWithFormat:localize(@"%s %ds"),u.machine, ut+4];
-                dispatch_async(dispatch_get_main_queue(), ^{
-                    postProgress(msg);
-                });
-                sleep(1);
-            }
-        }
     }else{
-        postProgress(localize(@"skipping wait😡"));
+        /*4k kernel pages?*/
+        if (kCFCoreFoundationVersionNumber < 1450.14)/*less < than iOS 11.2?*/{
+            
+            [_jailbreak setTitle:localize(@"Async_wake sploit") forState:UIControlStateNormal];
+            tipsyPIEfp0 = get_kernel_memory_rw();//async_wwake();
+            printf("kenel page 16k - mach tfp0:%x\n",tipsyPIEfp0);
+            
+            goto end;
+        }else if (kCFCoreFoundationVersionNumber >= 1452.24) /*16k kernel less than ios 12 newer or equal to ios 11.4*/{
+            //kCFCoreFoundationVersionNumber < 1535.12 &&
+            [_jailbreak setTitle:localize(@"11.4 Voucher sploit") forState:UIControlStateNormal];
+            tipsyPIEfp0 = voucher_swap();
+            printf("kenel page 16k - mach tfp0:%x\n",tipsyPIEfp0);
+            
+            goto end;
+            /*4k kernel less than ios 12 newer than ios 11.2 works for all devices 11.2-11.4.1*/
+        }else if (kCFCoreFoundationVersionNumber >= 1450.14 && kCFCoreFoundationVersionNumber <= 1452.23)/* //1452.23 - 11.4 - 4k kernel greater or equal iOS 11.4? less than 12*/{
+            
+            if (!strcmp(u.machine, "iPhone6,1") || (!strcmp(u.machine, "iPhone6,2") || (!strcmp(u.machine, "iPhone7,1") || (!strcmp(u.machine, "iPhone7,2"))))) {
+                printf("i5s & i6  & 6+ -----------\n");
+                printf("Hello %s ---------------\n", u.machine);
+                
+                while ((ut = 80 - uptime()) > 0 ) {
+                    
+                    NSString *msg = [NSString
+                                     stringWithFormat:localize(@"%s %ds"),u.machine, ut+20];
+                    dispatch_async(dispatch_get_main_queue(), ^{
+                        postProgress(msg);
+                    });
+                    sleep(1);
+                }
+            }
+            
+            else if (!strcmp(u.machine, "iPad5,3") || (!strcmp(u.machine, "iPad5,4") || (!strcmp(u.machine, "iPad4,2") || (!strcmp(u.machine, "iPad4,3"))))) {
+                printf("iPad air 1 & 2 -----------\n");
+                while ((ut = 99 - uptime()) > 0 ) {
+                    NSString *msg = [NSString stringWithFormat:localize(@"%s %ds"),u.machine, ut+14];
+                    dispatch_async(dispatch_get_main_queue(), ^{
+                        postProgress(msg);
+                    });
+                    sleep(1);
+                }
+                
+            }else if (!strcmp(u.machine, "iPad5,1") || (!strcmp(u.machine, "iPad5,2") || (!strcmp(u.machine, "iPad4,7") || (!strcmp(u.machine, "iPad4,8") || (!strcmp(u.machine, "iPad4,9")))))) {
+                printf("iPad mini 4 & 3 -----------\n");
+                
+                while ((ut = 116 - uptime()) > 0 ) {
+                    
+                    NSString *msg = [NSString stringWithFormat:localize(@"%s %ds"),u.machine, ut+4];
+                    dispatch_async(dispatch_get_main_queue(), ^{
+                        postProgress(msg);
+                    });
+                    sleep(1);
+                }
+            }else if (!strcmp(u.machine, "iPod7,1")) {
+                printf("iPod 6 -----------\n");
+                while ((ut = 116 - uptime()) > 0 ) {
+                    NSString *msg = [NSString stringWithFormat:localize(@"%s %ds"),u.machine, ut+4];
+                    dispatch_async(dispatch_get_main_queue(), ^{
+                        postProgress(msg);
+                    });
+                    sleep(1);
+                }
+            }
+            [_jailbreak setTitle:localize(@"VFS sploit") forState:UIControlStateNormal];
+            //v1ntex(v1ntex_callback(kernel_task, kbase, data));
+            mach_port_t faketfp0ass = MACH_PORT_NULL;
+            faketfp0ass = vfs_sploit();
+            printf("done! with tfp0 : %x\n", faketfp0ass);
+
+            //prepare_for_rw_with_fake_tfp0(faketfp0ass);
+
+            tipsyPIEfp0 = faketfp0ass;
+            printf("tfp0----------->: %x\n", tipsyPIEfp0);
+            goto end;
+            
+            
+            
+        }else if (kCFCoreFoundationVersionNumber < 1535.12 && kCFCoreFoundationVersionNumber >= 1452.24) /*4k kernel less than ios 12 newer or equal to ios 11.4*/{
+            
+            [_jailbreak setTitle:localize(@"V1ntex sploit, vfs NO") forState:UIControlStateNormal];
+            int rv2 = cp( "/var/mobile/Media/th0rkcache/kernelcache", "/System/Library/Caches/com.apple.kernelcaches/kernelcache");
+
+            v1ntex_offsets *v1ntex_offs = NULL;
+            if ((v1ntex_offs = get_v1ntex_offsets("/var/mobile/Media/th0rkcache/kernelcache")) == NULL) {
+            //    _assert(clean_file(kernelCacheDownloadedPath), message, true);
+            //  _assert(false, message, true);
+            }
+            exploitstatus = v1ntex(v1ntex_callback, NULL, v1ntex_offs);
+            //tipsyPIEfp0 = v1ntex(v1ntex_callback, NULL, v1ntex_offs);
+        //if (v1ntex(v1ntex_callback, NULL, v1ntex_offs) == ERR_SUCCESS &&
+            //MACH_PORT_VALID(tfp0) &&
+            //kernel_base = find_kernel_base();//ISADDR(kernel_base) &&
+            // kernel_slide;//ISADDR(kernel_slide)) {
+            // exploit_success = true;
+            //}
+            //break;
+            
+            
+            //tipsyPIEfp0 = voucher_swap();
+            //tipsyPIEfp0 = v3ntex();//v1ntex
+            printf("kernel page 4k - mach tfp0:%x\n",tipsyPIEfp0);
+            
+            goto end;
+        }else if (kCFCoreFoundationVersionNumber >= 1535.12) /*4k kernel ios 12 or newer?*/{
+            
+            [_jailbreak setTitle:localize(@"V3ntex sploit") forState:UIControlStateNormal];
+            
+            tipsyPIEfp0 = v3ntex();
+            printf("kernel page 4k - mach tfp0:%x\n",tipsyPIEfp0);
+
+            goto end;
+            
+        }
 
     }
+    end:
         
-         mach_port_t tipsyPIEfp0 = MACH_PORT_NULL;
-         tipsyPIEfp0 = voucher_swap();
+
 
         if (!MACH_PORT_VALID(tipsyPIEfp0)) {
             postProgress(localize(@"Error: exploit😡"));
@@ -2107,68 +2225,6 @@ NSString *getURLForUsername(NSString *user) {
     uname(&u);
     if (!strcmp(u.machine, "iPhone8,1") || (!strcmp(u.machine, "iPhone8,2"))) {
         printf("i6s & 6s+ -----------\n");
-        while ((ut = 107 - uptime()) > 0 ) {
-            NSString *msg = [NSString stringWithFormat:localize(@"%s %ds"), u.machine, ut+13];
-            dispatch_async(dispatch_get_main_queue(), ^{
-                postProgress(msg);
-            });
-            sleep(1);
-        }
-
-        dispatch_async(dispatch_get_main_queue(), ^{
-            postProgress(localize(@"13s wait"));
-        });
-        sleep(1);
-        dispatch_async(dispatch_get_main_queue(), ^{
-            postProgress(localize(@"12s wait"));
-        });
-        sleep(1);
-        dispatch_async(dispatch_get_main_queue(), ^{
-            postProgress(localize(@"11s wait"));
-        });
-        sleep(1);
-        dispatch_async(dispatch_get_main_queue(), ^{
-            postProgress(localize(@"10s wait"));
-        });
-        sleep(1);
-        dispatch_async(dispatch_get_main_queue(), ^{
-            postProgress(localize(@"9s wait"));
-        });
-        sleep(1);
-        dispatch_async(dispatch_get_main_queue(), ^{
-            postProgress(localize(@"8s wait"));
-        });
-        sleep(1);
-        dispatch_async(dispatch_get_main_queue(), ^{
-            postProgress(localize(@"7s wait"));
-        });
-        sleep(1);
-        dispatch_async(dispatch_get_main_queue(), ^{
-            postProgress(localize(@"6s wait"));
-        });
-        sleep(1);
-        dispatch_async(dispatch_get_main_queue(), ^{
-            postProgress(localize(@"5s wait"));
-        });
-        sleep(1);
-        
-        dispatch_async(dispatch_get_main_queue(), ^{
-            postProgress(localize(@"4s wait"));
-        });
-        sleep(1);
-        dispatch_async(dispatch_get_main_queue(), ^{
-            postProgress(localize(@"3s wait"));
-        });
-        sleep(1);
-        dispatch_async(dispatch_get_main_queue(), ^{
-            postProgress(localize(@"2s wait"));
-        });
-        sleep(1);
-        dispatch_async(dispatch_get_main_queue(), ^{
-            postProgress(localize(@"1s wait"));
-        });
-        sleep(1);
-        
         
         dispatch_async(dispatch_get_main_queue(), ^{
             postProgress(localize(@"VFS"));
@@ -2177,273 +2233,24 @@ NSString *getURLForUsername(NSString *user) {
     }else if (!strcmp(u.machine, "iPhone10,1") || (!strcmp(u.machine, "iPhone10,4") || (!strcmp(u.machine, "iPhone10,2") || (!strcmp(u.machine, "iPhone10,5"))))) {
             printf("i8 & i8 + -----------\n");
         
-        while ((ut = 57 - uptime()) > 0 ) {
-            NSString *msg = [NSString stringWithFormat:localize(@"%s %ds"), u.machine, ut+3];
-            dispatch_async(dispatch_get_main_queue(), ^{
-                postProgress(msg);
-            });
-            sleep(1);
-        }
-        /*
-         postProgress(localize(@"i8(+) wait 19s"));
-         sleep(1);
-         postProgress(localize(@"i8(+) wait 18s"));
-         sleep(1);
-         postProgress(localize(@"i8(+) wait 17s"));
-         sleep(1);
-         
-         postProgress(localize(@"i8(+) wait 16s"));
-         sleep(1);
-         
-         postProgress(localize(@"i8(+) wait 15s"));
-         sleep(1);
-         
-         postProgress(localize(@"i8(+) 14s wait"));
-         sleep(1);
-         
-        dispatch_async(dispatch_get_main_queue(), ^{
-            postProgress(localize(@"13s wait"));
-        });
-        sleep(1);
-        dispatch_async(dispatch_get_main_queue(), ^{
-            postProgress(localize(@"12s wait"));
-        });
-        sleep(1);
-        dispatch_async(dispatch_get_main_queue(), ^{
-            postProgress(localize(@"11s wait"));
-        });
-        sleep(1);
-        dispatch_async(dispatch_get_main_queue(), ^{
-            postProgress(localize(@"10s wait"));
-        });
-        sleep(1);
-        dispatch_async(dispatch_get_main_queue(), ^{
-            postProgress(localize(@"9s wait"));
-        });
-        sleep(1);
-        dispatch_async(dispatch_get_main_queue(), ^{
-            postProgress(localize(@"8s wait"));
-        });
-        sleep(1);
-        dispatch_async(dispatch_get_main_queue(), ^{
-            postProgress(localize(@"7s wait"));
-        });
-        sleep(1);
-        dispatch_async(dispatch_get_main_queue(), ^{
-            postProgress(localize(@"6s wait"));
-        });
-        sleep(1);
-        dispatch_async(dispatch_get_main_queue(), ^{
-            postProgress(localize(@"5s wait"));
-        });
-        sleep(1);
-        dispatch_async(dispatch_get_main_queue(), ^{
-            postProgress(localize(@"4s wait"));
-        });
-        sleep(1);
-         */
-        dispatch_async(dispatch_get_main_queue(), ^{
-            postProgress(localize(@"3s wait"));
-        });
-        sleep(1);
-        dispatch_async(dispatch_get_main_queue(), ^{
-            postProgress(localize(@"2s wait"));
-        });
-        sleep(1);
-        dispatch_async(dispatch_get_main_queue(), ^{
-            postProgress(localize(@"1s wait"));
-        });
-        sleep(1);
-        
+
         dispatch_async(dispatch_get_main_queue(), ^{
             postProgress(localize(@"VFS"));
         });
 
-        }
-        else if (!strcmp(u.machine, "iPhone10,3") || (!strcmp(u.machine, "iPhone10,6"))) {
+    }else if (!strcmp(u.machine, "iPhone10,3") || (!strcmp(u.machine, "iPhone10,6"))) {
             printf("iX -----------\n");
             
-            while ((ut = 40 - uptime()) > 0 ) {
-                NSString *msg = [NSString stringWithFormat:localize(@"%s %ds"), u.machine, ut+20];
-                dispatch_async(dispatch_get_main_queue(), ^{
-                    postProgress(msg);
-                });
-                sleep(1);
-            }
-            
-            dispatch_async(dispatch_get_main_queue(), ^{
-                postProgress(localize(@"19s wait"));
-            });
-            sleep(1);
-            dispatch_async(dispatch_get_main_queue(), ^{
-                postProgress(localize(@"18s wait"));
-            });
-            sleep(1);
-            dispatch_async(dispatch_get_main_queue(), ^{
-                postProgress(localize(@"17s wait"));
-            });
-            sleep(1);
-            dispatch_async(dispatch_get_main_queue(), ^{
-                postProgress(localize(@"16s wait"));
-            });
-            sleep(1);
-            dispatch_async(dispatch_get_main_queue(), ^{
-                postProgress(localize(@"15s wait"));
-            });
-            sleep(1);
-            dispatch_async(dispatch_get_main_queue(), ^{
-                postProgress(localize(@"14s wait"));
-            });
-            sleep(1);
-            
-            dispatch_async(dispatch_get_main_queue(), ^{
-                postProgress(localize(@"13s wait"));
-            });
-            sleep(1);
-            dispatch_async(dispatch_get_main_queue(), ^{
-                postProgress(localize(@"12s wait"));
-            });
-            sleep(1);
-            dispatch_async(dispatch_get_main_queue(), ^{
-                postProgress(localize(@"11s wait"));
-            });
-            sleep(1);
-            dispatch_async(dispatch_get_main_queue(), ^{
-                postProgress(localize(@"10s wait"));
-            });
-            sleep(1);
-            dispatch_async(dispatch_get_main_queue(), ^{
-                postProgress(localize(@"9s wait"));
-            });
-            sleep(1);
-            dispatch_async(dispatch_get_main_queue(), ^{
-                postProgress(localize(@"8s wait"));
-            });
-            sleep(1);
-            dispatch_async(dispatch_get_main_queue(), ^{
-                postProgress(localize(@"7s wait"));
-            });
-            sleep(1);
-            dispatch_async(dispatch_get_main_queue(), ^{
-                postProgress(localize(@"6s wait"));
-            });
-            sleep(1);
-            dispatch_async(dispatch_get_main_queue(), ^{
-                postProgress(localize(@"5s wait"));
-            });
-            sleep(1);
-            
-            dispatch_async(dispatch_get_main_queue(), ^{
-                postProgress(localize(@"4s wait"));
-            });
-            sleep(1);
-            dispatch_async(dispatch_get_main_queue(), ^{
-                postProgress(localize(@"3s wait"));
-            });
-            sleep(1);
-            dispatch_async(dispatch_get_main_queue(), ^{
-                postProgress(localize(@"2s wait"));
-            });
-            sleep(1);
-            dispatch_async(dispatch_get_main_queue(), ^{
-                postProgress(localize(@"1s wait"));
-            });
-            sleep(1);
-            
             
             dispatch_async(dispatch_get_main_queue(), ^{
                 postProgress(localize(@"VFS"));
             });
-        }
-    
-        else if (!strcmp(u.machine, "iPhone9,1") || (!strcmp(u.machine, "iPhone9,3") || (!strcmp(u.machine, "iPhone9,2") || (!strcmp(u.machine, "iPhone9,4"))))) {
+    }else if (!strcmp(u.machine, "iPhone9,1") || (!strcmp(u.machine, "iPhone9,3") || (!strcmp(u.machine, "iPhone9,2") || (!strcmp(u.machine, "iPhone9,4"))))) {
             printf("i7 & i7 + -----------\n");
-            
-            while ((ut = 47 - uptime()) > 0 ) {
-                NSString *msg = [NSString stringWithFormat:localize(@"%s %ds"), u.machine, ut+13];
-                dispatch_async(dispatch_get_main_queue(), ^{
-                    postProgress(msg);
-                });
-                sleep(1);
-            }
-            /*
-             postProgress(localize(@"i8(+) wait 19s"));
-             sleep(1);
-             postProgress(localize(@"i8(+) wait 18s"));
-             sleep(1);
-             postProgress(localize(@"i8(+) wait 17s"));
-             sleep(1);
-             
-             postProgress(localize(@"i8(+) wait 16s"));
-             sleep(1);
-             
-             postProgress(localize(@"i8(+) wait 15s"));
-             sleep(1);
-             
-             postProgress(localize(@"i8(+) 14s wait"));
-             sleep(1);
-             */
-            dispatch_async(dispatch_get_main_queue(), ^{
-                postProgress(localize(@"13s wait"));
-            });
-            sleep(1);
-            dispatch_async(dispatch_get_main_queue(), ^{
-                postProgress(localize(@"12s wait"));
-            });
-            sleep(1);
-            dispatch_async(dispatch_get_main_queue(), ^{
-                postProgress(localize(@"11s wait"));
-            });
-            sleep(1);
-            dispatch_async(dispatch_get_main_queue(), ^{
-                postProgress(localize(@"10s wait"));
-            });
-            sleep(1);
-            dispatch_async(dispatch_get_main_queue(), ^{
-                postProgress(localize(@"9s wait"));
-            });
-            sleep(1);
-            dispatch_async(dispatch_get_main_queue(), ^{
-                postProgress(localize(@"8s wait"));
-            });
-            sleep(1);
-            dispatch_async(dispatch_get_main_queue(), ^{
-                postProgress(localize(@"7s wait"));
-            });
-            sleep(1);
-            dispatch_async(dispatch_get_main_queue(), ^{
-                postProgress(localize(@"6s wait"));
-            });
-            sleep(1);
-            dispatch_async(dispatch_get_main_queue(), ^{
-                postProgress(localize(@"5s wait"));
-            });
-            sleep(1);
-            dispatch_async(dispatch_get_main_queue(), ^{
-                postProgress(localize(@"4s wait"));
-            });
-            sleep(1);
-            dispatch_async(dispatch_get_main_queue(), ^{
-                postProgress(localize(@"3s wait"));
-            });
-            sleep(1);
-            dispatch_async(dispatch_get_main_queue(), ^{
-                postProgress(localize(@"2s wait"));
-            });
-            sleep(1);
-            dispatch_async(dispatch_get_main_queue(), ^{
-                postProgress(localize(@"1s wait"));
-            });
-            sleep(1);
-            
-            
-            dispatch_async(dispatch_get_main_queue(), ^{
-                postProgress(localize(@"VFS"));
-            });
-        }
-    
-    
-        else if (!strcmp(u.machine, "iPhone8,4")) {
+        dispatch_async(dispatch_get_main_queue(), ^{
+            postProgress(localize(@"VFS"));
+        });
+    }else if (!strcmp(u.machine, "iPhone8,4")) {
             printf("iSE-----------\n");
             
             while ((ut = 107 - uptime()) > 0 ) {
@@ -2528,175 +2335,15 @@ NSString *getURLForUsername(NSString *user) {
             dispatch_async(dispatch_get_main_queue(), ^{
                 postProgress(localize(@"VFS"));
             });
-        }
-    
-        else if (!strcmp(u.machine, "iPad6,3") || (!strcmp(u.machine, "iPad6,4") || (!strcmp(u.machine, "iPad6,7") || (!strcmp(u.machine, "iPad6,8"))))) {
+        }else if (!strcmp(u.machine, "iPad6,3") || (!strcmp(u.machine, "iPad6,4") || (!strcmp(u.machine, "iPad6,7") || (!strcmp(u.machine, "iPad6,8"))))) {
             printf("iPad pro 9 & 12 in -----------\n");
             
-            while ((ut = 47 - uptime()) > 0 ) {
-                NSString *msg = [NSString stringWithFormat:localize(@"%s %ds"), u.machine, ut+13];
-                dispatch_async(dispatch_get_main_queue(), ^{
-                    postProgress(msg);
-                });
-                sleep(1);
-            }
-            /*
-             postProgress(localize(@"i8(+) wait 19s"));
-             sleep(1);
-             postProgress(localize(@"i8(+) wait 18s"));
-             sleep(1);
-             postProgress(localize(@"i8(+) wait 17s"));
-             sleep(1);
-             
-             postProgress(localize(@"i8(+) wait 16s"));
-             sleep(1);
-             
-             postProgress(localize(@"i8(+) wait 15s"));
-             sleep(1);
-             
-             postProgress(localize(@"i8(+) 14s wait"));
-             sleep(1);
-             */
-            dispatch_async(dispatch_get_main_queue(), ^{
-                postProgress(localize(@"13s wait"));
-            });
-            sleep(1);
-            dispatch_async(dispatch_get_main_queue(), ^{
-                postProgress(localize(@"12s wait"));
-            });
-            sleep(1);
-            dispatch_async(dispatch_get_main_queue(), ^{
-                postProgress(localize(@"11s wait"));
-            });
-            sleep(1);
-            dispatch_async(dispatch_get_main_queue(), ^{
-                postProgress(localize(@"10s wait"));
-            });
-            sleep(1);
-            dispatch_async(dispatch_get_main_queue(), ^{
-                postProgress(localize(@"9s wait"));
-            });
-            sleep(1);
-            dispatch_async(dispatch_get_main_queue(), ^{
-                postProgress(localize(@"8s wait"));
-            });
-            sleep(1);
-            dispatch_async(dispatch_get_main_queue(), ^{
-                postProgress(localize(@"7s wait"));
-            });
-            sleep(1);
-            dispatch_async(dispatch_get_main_queue(), ^{
-                postProgress(localize(@"6s wait"));
-            });
-            sleep(1);
-            dispatch_async(dispatch_get_main_queue(), ^{
-                postProgress(localize(@"5s wait"));
-            });
-            sleep(1);
-            
-            dispatch_async(dispatch_get_main_queue(), ^{
-                postProgress(localize(@"4s wait"));
-            });
-            sleep(1);
-            dispatch_async(dispatch_get_main_queue(), ^{
-                postProgress(localize(@"3s wait"));
-            });
-            sleep(1);
-            dispatch_async(dispatch_get_main_queue(), ^{
-                postProgress(localize(@"2s wait"));
-            });
-            sleep(1);
-            dispatch_async(dispatch_get_main_queue(), ^{
-                postProgress(localize(@"1s wait"));
-            });
-            sleep(1);
-            
-            
+       
             dispatch_async(dispatch_get_main_queue(), ^{
                 postProgress(localize(@"VFS"));
             });
-        }
-    
-        else if (!strcmp(u.machine, "iPad7,1") || (!strcmp(u.machine, "iPad7,2") || (!strcmp(u.machine, "iPad7,4") || (!strcmp(u.machine, "iPad7,5"))))) {
+        }else if (!strcmp(u.machine, "iPad7,1") || (!strcmp(u.machine, "iPad7,2") || (!strcmp(u.machine, "iPad7,4") || (!strcmp(u.machine, "iPad7,5"))))) {
             printf("iPad pro 10 & 12 in 2nd gen -----------\n");
-            
-            while ((ut = 47 - uptime()) > 0 ) {
-                NSString *msg = [NSString stringWithFormat:localize(@"%s %ds"), u.machine, ut+13];
-                dispatch_async(dispatch_get_main_queue(), ^{
-                    postProgress(msg);
-                });
-                sleep(1);
-            }
-            /*
-             postProgress(localize(@"i8(+) wait 19s"));
-             sleep(1);
-             postProgress(localize(@"i8(+) wait 18s"));
-             sleep(1);
-             postProgress(localize(@"i8(+) wait 17s"));
-             sleep(1);
-             
-             postProgress(localize(@"i8(+) wait 16s"));
-             sleep(1);
-             
-             postProgress(localize(@"i8(+) wait 15s"));
-             sleep(1);
-             
-             postProgress(localize(@"i8(+) 14s wait"));
-             sleep(1);
-             */
-            dispatch_async(dispatch_get_main_queue(), ^{
-                postProgress(localize(@"13s wait"));
-            });
-            sleep(1);
-            dispatch_async(dispatch_get_main_queue(), ^{
-                postProgress(localize(@"12s wait"));
-            });
-            sleep(1);
-            dispatch_async(dispatch_get_main_queue(), ^{
-                postProgress(localize(@"11s wait"));
-            });
-            sleep(1);
-            dispatch_async(dispatch_get_main_queue(), ^{
-                postProgress(localize(@"10s wait"));
-            });
-            sleep(1);
-            dispatch_async(dispatch_get_main_queue(), ^{
-                postProgress(localize(@"9s wait"));
-            });
-            sleep(1);
-            dispatch_async(dispatch_get_main_queue(), ^{
-                postProgress(localize(@"8s wait"));
-            });
-            sleep(1);
-            dispatch_async(dispatch_get_main_queue(), ^{
-                postProgress(localize(@"7s wait"));
-            });
-            sleep(1);
-            dispatch_async(dispatch_get_main_queue(), ^{
-                postProgress(localize(@"6s wait"));
-            });
-            sleep(1);
-            dispatch_async(dispatch_get_main_queue(), ^{
-                postProgress(localize(@"5s wait"));
-            });
-            sleep(1);
-            dispatch_async(dispatch_get_main_queue(), ^{
-                postProgress(localize(@"4s wait"));
-            });
-            sleep(1);
-            dispatch_async(dispatch_get_main_queue(), ^{
-                postProgress(localize(@"3s wait"));
-            });
-            sleep(1);
-            dispatch_async(dispatch_get_main_queue(), ^{
-                postProgress(localize(@"2s wait"));
-            });
-            sleep(1);
-            dispatch_async(dispatch_get_main_queue(), ^{
-                postProgress(localize(@"1s wait"));
-            });
-            sleep(1);
-            
             
             dispatch_async(dispatch_get_main_queue(), ^{
                 postProgress(localize(@"VFS"));
@@ -2708,7 +2355,7 @@ NSString *getURLForUsername(NSString *user) {
     
         else if (!strcmp(u.machine, "iPhone6,1") || (!strcmp(u.machine, "iPhone6,2") || (!strcmp(u.machine, "iPhone7,1") || (!strcmp(u.machine, "iPhone7,2"))))) {
             printf("i5s & i6  & 6+ -----------\n");
-            while ((ut = 61 - uptime()) > 0 ) {
+            while ((ut = 81 - uptime()) > 0 ) {
                 NSString *msg = [NSString stringWithFormat:localize(@"%s %ds"), u.machine, ut+19];
                 dispatch_async(dispatch_get_main_queue(), ^{
                     postProgress(msg);
@@ -3065,63 +2712,7 @@ NSString *getURLForUsername(NSString *user) {
                 });
                 sleep(1);
             }
-            /*
-             postProgress(localize(@"i8(+) wait 19s"));
-             sleep(1);
-             postProgress(localize(@"i8(+) wait 18s"));
-             sleep(1);
-             postProgress(localize(@"i8(+) wait 17s"));
-             sleep(1);
-             
-             postProgress(localize(@"i8(+) wait 16s"));
-             sleep(1);
-             
-             postProgress(localize(@"i8(+) wait 15s"));
-             sleep(1);
-             
-             postProgress(localize(@"i8(+) 14s wait"));
-             sleep(1);
-             */
-            dispatch_async(dispatch_get_main_queue(), ^{
-                postProgress(localize(@"13s wait"));
-            });
-            sleep(1);
-            dispatch_async(dispatch_get_main_queue(), ^{
-                postProgress(localize(@"12s wait"));
-            });
-            sleep(1);
-            dispatch_async(dispatch_get_main_queue(), ^{
-                postProgress(localize(@"11s wait"));
-            });
-            sleep(1);
-            dispatch_async(dispatch_get_main_queue(), ^{
-                postProgress(localize(@"10s wait"));
-            });
-            sleep(1);
-            dispatch_async(dispatch_get_main_queue(), ^{
-                postProgress(localize(@"9s wait"));
-            });
-            sleep(1);
-            dispatch_async(dispatch_get_main_queue(), ^{
-                postProgress(localize(@"8s wait"));
-            });
-            sleep(1);
-            dispatch_async(dispatch_get_main_queue(), ^{
-                postProgress(localize(@"7s wait"));
-            });
-            sleep(1);
-            dispatch_async(dispatch_get_main_queue(), ^{
-                postProgress(localize(@"6s wait"));
-            });
-            sleep(1);
-            dispatch_async(dispatch_get_main_queue(), ^{
-                postProgress(localize(@"5s wait"));
-            });
-            sleep(1);
-            dispatch_async(dispatch_get_main_queue(), ^{
-                postProgress(localize(@"4s wait"));
-            });
-            sleep(1);
+
             dispatch_async(dispatch_get_main_queue(), ^{
                 postProgress(localize(@"3s wait"));
             });
@@ -3134,8 +2725,6 @@ NSString *getURLForUsername(NSString *user) {
                 postProgress(localize(@"1s wait"));
             });
             sleep(1);
-            
-            
             dispatch_async(dispatch_get_main_queue(), ^{
                 postProgress(localize(@"VFS"));
             });

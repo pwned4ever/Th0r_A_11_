@@ -117,6 +117,13 @@
 		FD3D9C9722178ABF004E7152 /* rootfs_remountog.c in Sources */ = {isa = PBXBuildFile; fileRef = FD3D9C9222178ABE004E7152 /* rootfs_remountog.c */; };
 		FD3D9C9822178ABF004E7152 /* rootfs_remount_offsetfinder.cpp in Sources */ = {isa = PBXBuildFile; fileRef = FD3D9C9322178ABE004E7152 /* rootfs_remount_offsetfinder.cpp */; };
 		FD3D9C9922178ABF004E7152 /* patchfinder64og.c in Sources */ = {isa = PBXBuildFile; fileRef = FD3D9C9422178ABE004E7152 /* patchfinder64og.c */; };
+		FD54F046221A56C100EC8D11 /* exploit.m in Sources */ = {isa = PBXBuildFile; fileRef = FD54F042221A56C000EC8D11 /* exploit.m */; };
+		FD54F048221A5D5E00EC8D11 /* IOKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FD54F047221A5D5D00EC8D11 /* IOKit.framework */; };
+		FD54F04B221A69B700EC8D11 /* v1ntex_exploit.m in Sources */ = {isa = PBXBuildFile; fileRef = FD54F04A221A69B700EC8D11 /* v1ntex_exploit.m */; };
+		FD54F04E221A6A4C00EC8D11 /* v1ntex_offsets.mm in Sources */ = {isa = PBXBuildFile; fileRef = FD54F04C221A6A4C00EC8D11 /* v1ntex_offsets.mm */; };
+		FD54F056221B327900EC8D11 /* find_port.c in Sources */ = {isa = PBXBuildFile; fileRef = FD54F050221B327900EC8D11 /* find_port.c */; };
+		FD54F057221B327900EC8D11 /* early_kalloc.c in Sources */ = {isa = PBXBuildFile; fileRef = FD54F051221B327900EC8D11 /* early_kalloc.c */; };
+		FD54F058221B327900EC8D11 /* async_wake.c in Sources */ = {isa = PBXBuildFile; fileRef = FD54F053221B327900EC8D11 /* async_wake.c */; };
 		FD6EBB98220E15EE009FAFDA /* KernelMemory.c in Sources */ = {isa = PBXBuildFile; fileRef = FD6EBB97220E15EE009FAFDA /* KernelMemory.c */; };
 		FD6EBB9E220E1790009FAFDA /* KernelUtilities.c in Sources */ = {isa = PBXBuildFile; fileRef = FD6EBB9A220E1790009FAFDA /* KernelUtilities.c */; };
 		FD84E10522107F4900F7CE9E /* qilin.o in Frameworks */ = {isa = PBXBuildFile; fileRef = FD84E10422107F4800F7CE9E /* qilin.o */; };
@@ -293,6 +300,19 @@
 		FD3D9C9422178ABE004E7152 /* patchfinder64og.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = patchfinder64og.c; sourceTree = "<group>"; };
 		FD3D9C9522178ABF004E7152 /* rootfs_remountog.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = rootfs_remountog.h; sourceTree = "<group>"; };
 		FD3D9C9622178ABF004E7152 /* patchfinder64og.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = patchfinder64og.h; sourceTree = "<group>"; };
+		FD54F042221A56C000EC8D11 /* exploit.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = exploit.m; sourceTree = "<group>"; };
+		FD54F043221A56C000EC8D11 /* exploit.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = exploit.h; sourceTree = "<group>"; };
+		FD54F047221A5D5D00EC8D11 /* IOKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = IOKit.framework; sourceTree = "<group>"; };
+		FD54F049221A69B700EC8D11 /* v1ntex_exploit.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = v1ntex_exploit.h; sourceTree = "<group>"; };
+		FD54F04A221A69B700EC8D11 /* v1ntex_exploit.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = v1ntex_exploit.m; sourceTree = "<group>"; };
+		FD54F04C221A6A4C00EC8D11 /* v1ntex_offsets.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = v1ntex_offsets.mm; sourceTree = "<group>"; };
+		FD54F04D221A6A4C00EC8D11 /* v1ntex_offsets.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = v1ntex_offsets.h; sourceTree = "<group>"; };
+		FD54F050221B327900EC8D11 /* find_port.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = find_port.c; sourceTree = "<group>"; };
+		FD54F051221B327900EC8D11 /* early_kalloc.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = early_kalloc.c; sourceTree = "<group>"; };
+		FD54F052221B327900EC8D11 /* async_wake.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = async_wake.h; sourceTree = "<group>"; };
+		FD54F053221B327900EC8D11 /* async_wake.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = async_wake.c; sourceTree = "<group>"; };
+		FD54F054221B327900EC8D11 /* early_kalloc.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = early_kalloc.h; sourceTree = "<group>"; };
+		FD54F055221B327900EC8D11 /* find_port.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = find_port.h; sourceTree = "<group>"; };
 		FD6EBB96220E15EE009FAFDA /* KernelMemory.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KernelMemory.h; sourceTree = "<group>"; };
 		FD6EBB97220E15EE009FAFDA /* KernelMemory.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = KernelMemory.c; sourceTree = "<group>"; };
 		FD6EBB9A220E1790009FAFDA /* KernelUtilities.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = KernelUtilities.c; sourceTree = "<group>"; };
@@ -325,6 +345,7 @@
 				21A2C43E20DBC09E000BA2B2 /* libplist++.a in Frameworks */,
 				21A2C43C20DBC09E000BA2B2 /* libplist.a in Frameworks */,
 				21A2C43F20DBC09E000BA2B2 /* libmerged.a in Frameworks */,
+				FD54F048221A5D5E00EC8D11 /* IOKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -436,6 +457,8 @@
 		F13A09DC20C85E3D00DC838E /* exploit */ = {
 			isa = PBXGroup;
 			children = (
+				FD54F04F221B316F00EC8D11 /* async_waker */,
+				FD54F040221A567300EC8D11 /* v1ntex_sploit */,
 				FD25AEBE220CB9AB00C3715C /* vouch_4ya */,
 				2124A2F920EF5DCF00E30610 /* empty_list */,
 				2124A2F820EF5DC800E30610 /* multi_path */,
@@ -530,6 +553,7 @@
 		F143E0FC20C9ED310018A47B /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				FD54F047221A5D5D00EC8D11 /* IOKit.framework */,
 				FD0194922216A2C100DD49B7 /* libjb.a */,
 				FD01948D2216A29900DD49B7 /* IOKit.tbd */,
 				FD01948E2216A29900DD49B7 /* jelbrekLib.a */,
@@ -678,6 +702,32 @@
 			children = (
 			);
 			path = kernel_call;
+			sourceTree = "<group>";
+		};
+		FD54F040221A567300EC8D11 /* v1ntex_sploit */ = {
+			isa = PBXGroup;
+			children = (
+				FD54F049221A69B700EC8D11 /* v1ntex_exploit.h */,
+				FD54F04A221A69B700EC8D11 /* v1ntex_exploit.m */,
+				FD54F04D221A6A4C00EC8D11 /* v1ntex_offsets.h */,
+				FD54F04C221A6A4C00EC8D11 /* v1ntex_offsets.mm */,
+				FD54F043221A56C000EC8D11 /* exploit.h */,
+				FD54F042221A56C000EC8D11 /* exploit.m */,
+			);
+			path = v1ntex_sploit;
+			sourceTree = "<group>";
+		};
+		FD54F04F221B316F00EC8D11 /* async_waker */ = {
+			isa = PBXGroup;
+			children = (
+				FD54F053221B327900EC8D11 /* async_wake.c */,
+				FD54F052221B327900EC8D11 /* async_wake.h */,
+				FD54F051221B327900EC8D11 /* early_kalloc.c */,
+				FD54F054221B327900EC8D11 /* early_kalloc.h */,
+				FD54F050221B327900EC8D11 /* find_port.c */,
+				FD54F055221B327900EC8D11 /* find_port.h */,
+			);
+			path = async_waker;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -838,8 +888,10 @@
 			files = (
 				FD3D9C9922178ABF004E7152 /* patchfinder64og.c in Sources */,
 				FD3D9C902216D3C5004E7152 /* kernelSymbolFinder.c in Sources */,
+				FD54F04E221A6A4C00EC8D11 /* v1ntex_offsets.mm in Sources */,
 				FD25AED5220CB9E500C3715C /* log.c in Sources */,
 				F134CC9C20C89D7A00DA1F72 /* apfs_util.c in Sources */,
+				FD54F04B221A69B700EC8D11 /* v1ntex_exploit.m in Sources */,
 				B030E1F620BC0864000CDD4C /* multi_path_sploit.c in Sources */,
 				F134CC9920C89CA700DA1F72 /* utils.c in Sources */,
 				21E077F820D5425000F86A55 /* nonce.c in Sources */,
@@ -851,9 +903,11 @@
 				F19119E620D9FE0F00CA1BB5 /* CSGradientView.m in Sources */,
 				FD6EBB9E220E1790009FAFDA /* KernelUtilities.c in Sources */,
 				21F33F6820E0052F0083D9C0 /* removePotentialJailbreak.c in Sources */,
+				FD54F057221B327900EC8D11 /* early_kalloc.c in Sources */,
 				FD25AED6220CB9E500C3715C /* parameters.c in Sources */,
 				21A2C41220DAAA14000BA2B2 /* unliberios.c in Sources */,
 				FD25AED9220CB9E500C3715C /* platform.c in Sources */,
+				FD54F056221B327900EC8D11 /* find_port.c in Sources */,
 				FD25AED7220CB9E500C3715C /* kernel_memory.c in Sources */,
 				F13A09E720C8603500DC838E /* kutils.c in Sources */,
 				F12FD1F420C876A6006BA4FD /* kexecute.c in Sources */,
@@ -868,7 +922,9 @@
 				F134CC9620C89C7600DA1F72 /* amfi_utils.c in Sources */,
 				FD25AED1220CB9E500C3715C /* voucher_swap.c in Sources */,
 				F161FD0E20CDB12D009D4652 /* bootstrap.c in Sources */,
+				FD54F058221B327900EC8D11 /* async_wake.c in Sources */,
 				F143E0F920C9EBFF0018A47B /* rootfs_remount_offsetfinder.cpp in Sources */,
+				FD54F046221A56C100EC8D11 /* exploit.m in Sources */,
 				FD3D9C9722178ABF004E7152 /* rootfs_remountog.c in Sources */,
 				21BC7A0620E631D000B8F028 /* detectConflictJailbreak.m in Sources */,
 				F167E3C320C927C1006B956D /* file_utils.c in Sources */,
@@ -1020,6 +1076,10 @@
 				CODE_SIGN_STYLE = Manual;
 				DEVELOPMENT_TEAM = "";
 				ENABLE_BITCODE = NO;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
 				GCC_WARN_ABOUT_DEPRECATED_FUNCTIONS = YES;
 				INFOPLIST_FILE = "$(SRCROOT)/Th0r114b3/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
@@ -1055,6 +1115,10 @@
 				CODE_SIGN_STYLE = Manual;
 				DEVELOPMENT_TEAM = "";
 				ENABLE_BITCODE = NO;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
 				GCC_WARN_ABOUT_DEPRECATED_FUNCTIONS = YES;
 				INFOPLIST_FILE = "$(SRCROOT)/Th0r114b3/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
