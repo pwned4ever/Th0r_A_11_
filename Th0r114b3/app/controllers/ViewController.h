@@ -3,12 +3,12 @@
 #import <AudioToolbox/AudioToolbox.h>
 #import "common.h"
 
-#define __FILENAME__ (__builtin_strrchr(__FILE__, '/') ? __builtin_strrchr(__FILE__, '/') + 1 : __FILE__)
+//#define __FILENAME__ (__builtin_strrchr(__FILE__, '/') ? __builtin_strrchr(__FILE__, '/') + 1 : __FILE__)
 
 //static NSString *message = nil;
-#define SETMESSAGE(msg) (message = msg)
+//#define SETMESSAGE(msg) (message = msg)
 
-#define _assert(test, message, fatal) do \
+//#define _assert(test, message, fatal) do \
 printf("__assert(%d:%s)@%s:%u[%s]", saved_errno, #test, __FILENAME__, __LINE__, __FUNCTION__); \
 
 typedef kern_return_t (*v1ntex_cb_t)(task_t kernel_task, kptr_t kbase, void* data);
@@ -76,6 +76,8 @@ int systemf(const char *cmd, ...);
 - (void)Vouchermessage;
 - (void)runningpatches;
 - (void)runningexploit;
+- (void)runningexploitFinal;
+
 - (void)serverS;
 - (void)cydiaDone;
 - (void)JBremoverIsDone;

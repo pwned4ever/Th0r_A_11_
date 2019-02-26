@@ -63,38 +63,10 @@
 		F1BE57C620CDB09E0087F82D /* tar.gz in Resources */ = {isa = PBXBuildFile; fileRef = F1BE57C220CDB09E0087F82D /* tar.gz */; };
 		F1BE57C720CDB09E0087F82D /* launchctl.gz in Resources */ = {isa = PBXBuildFile; fileRef = F1BE57C320CDB09E0087F82D /* launchctl.gz */; };
 		F1E5C2C820C879A600438426 /* remap_tfp_set_hsp.c in Sources */ = {isa = PBXBuildFile; fileRef = F1E5C2C720C879A600438426 /* remap_tfp_set_hsp.c */; };
-		F715AE94212BC6950051B097 /* p7zip_16.02_iphoneos-arm.deb.gz in Resources */ = {isa = PBXBuildFile; fileRef = F715AE8E212BC6950051B097 /* p7zip_16.02_iphoneos-arm.deb.gz */; };
-		F715AE96212BC6950051B097 /* unrar_5.5.8_iphoneos-arm.deb.gz in Resources */ = {isa = PBXBuildFile; fileRef = F715AE90212BC6950051B097 /* unrar_5.5.8_iphoneos-arm.deb.gz */; };
-		F715AE97212BC6950051B097 /* unzip_6.0_iphoneos-arm.deb.gz in Resources */ = {isa = PBXBuildFile; fileRef = F715AE91212BC6950051B097 /* unzip_6.0_iphoneos-arm.deb.gz */; };
-		F715AE98212BC6950051B097 /* zip_3.0_iphoneos-arm.deb.gz in Resources */ = {isa = PBXBuildFile; fileRef = F715AE92212BC6950051B097 /* zip_3.0_iphoneos-arm.deb.gz */; };
 		FD01923821DB579A00B3E99E /* Th0r-endgame.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = FD01923721DB579A00B3E99E /* Th0r-endgame.jpeg */; };
 		FD01948F2216A29900DD49B7 /* IOKit.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = FD01948D2216A29900DD49B7 /* IOKit.tbd */; };
 		FD0194902216A29900DD49B7 /* jelbrekLib.a in Frameworks */ = {isa = PBXBuildFile; fileRef = FD01948E2216A29900DD49B7 /* jelbrekLib.a */; };
 		FD0194932216A2C100DD49B7 /* libjb.a in Frameworks */ = {isa = PBXBuildFile; fileRef = FD0194922216A2C100DD49B7 /* libjb.a */; };
-		FD04326C21EEF49300DDA36F /* coreutils_8.30-2_iphoneos-arm.deb.gz in Resources */ = {isa = PBXBuildFile; fileRef = FD04326B21EEF49200DDA36F /* coreutils_8.30-2_iphoneos-arm.deb.gz */; };
-		FD04327E21EEFBCE00DDA36F /* firmware-sbin_0-1_iphoneos-all.deb.gz in Resources */ = {isa = PBXBuildFile; fileRef = FD04326D21EEFBC900DDA36F /* firmware-sbin_0-1_iphoneos-all.deb.gz */; };
-		FD04327F21EEFBCE00DDA36F /* apt7-key_1.4.8-1_iphoneos-arm.deb.gz in Resources */ = {isa = PBXBuildFile; fileRef = FD04326E21EEFBC900DDA36F /* apt7-key_1.4.8-1_iphoneos-arm.deb.gz */; };
-		FD04328021EEFBCE00DDA36F /* system-cmds_790.30.1-2_iphoneos-arm.deb.gz in Resources */ = {isa = PBXBuildFile; fileRef = FD04326F21EEFBCA00DDA36F /* system-cmds_790.30.1-2_iphoneos-arm.deb.gz */; };
-		FD04328121EEFBCE00DDA36F /* base_1-4_iphoneos-arm.deb.gz in Resources */ = {isa = PBXBuildFile; fileRef = FD04327021EEFBCA00DDA36F /* base_1-4_iphoneos-arm.deb.gz */; };
-		FD04328221EEFBCE00DDA36F /* dpkg_1.18.25-5_iphoneos-arm.deb.gz in Resources */ = {isa = PBXBuildFile; fileRef = FD04327121EEFBCA00DDA36F /* dpkg_1.18.25-5_iphoneos-arm.deb.gz */; };
-		FD04328321EEFBCE00DDA36F /* cydia-lproj_1.1.32~b1_iphoneos-arm.deb.gz in Resources */ = {isa = PBXBuildFile; fileRef = FD04327221EEFBCA00DDA36F /* cydia-lproj_1.1.32~b1_iphoneos-arm.deb.gz */; };
-		FD04328421EEFBCE00DDA36F /* lzma_2-4.32.7-2_iphoneos-arm.deb.gz in Resources */ = {isa = PBXBuildFile; fileRef = FD04327321EEFBCA00DDA36F /* lzma_2-4.32.7-2_iphoneos-arm.deb.gz */; };
-		FD04328621EEFBCE00DDA36F /* apt1.4_1.4.8-3_iphoneos-arm.deb.gz in Resources */ = {isa = PBXBuildFile; fileRef = FD04327521EEFBCC00DDA36F /* apt1.4_1.4.8-3_iphoneos-arm.deb.gz */; };
-		FD04328721EEFBCE00DDA36F /* coreutils-bin_8.30-3_iphoneos-arm.deb.gz in Resources */ = {isa = PBXBuildFile; fileRef = FD04327621EEFBCC00DDA36F /* coreutils-bin_8.30-3_iphoneos-arm.deb.gz */; };
-		FD04328821EEFBCE00DDA36F /* apt-key_1.4.8-3_iphoneos-arm.deb.gz in Resources */ = {isa = PBXBuildFile; fileRef = FD04327721EEFBCC00DDA36F /* apt-key_1.4.8-3_iphoneos-arm.deb.gz */; };
-		FD04328A21EEFBCE00DDA36F /* apt7-lib_1.4.8-1_iphoneos-arm.deb.gz in Resources */ = {isa = PBXBuildFile; fileRef = FD04327921EEFBCD00DDA36F /* apt7-lib_1.4.8-1_iphoneos-arm.deb.gz */; };
-		FD04328B21EEFBCE00DDA36F /* lz4_1.7.5-1_iphoneos-arm.deb.gz in Resources */ = {isa = PBXBuildFile; fileRef = FD04327A21EEFBCD00DDA36F /* lz4_1.7.5-1_iphoneos-arm.deb.gz */; };
-		FD04328C21EEFBCE00DDA36F /* xz_5.2.4-4_iphoneos-arm.deb.gz in Resources */ = {isa = PBXBuildFile; fileRef = FD04327B21EEFBCD00DDA36F /* xz_5.2.4-4_iphoneos-arm.deb.gz */; };
-		FD04328D21EEFBCE00DDA36F /* apt_1-0-2_iphoneos-arm.deb.gz in Resources */ = {isa = PBXBuildFile; fileRef = FD04327C21EEFBCD00DDA36F /* apt_1-0-2_iphoneos-arm.deb.gz */; };
-		FD04328E21EEFBCE00DDA36F /* debianutils_4.8.6-1_iphoneos-arm.deb.gz in Resources */ = {isa = PBXBuildFile; fileRef = FD04327D21EEFBCD00DDA36F /* debianutils_4.8.6-1_iphoneos-arm.deb.gz */; };
-		FD0473C821DF246600FCA7BF /* mterminal_1.4-6_iphoneos-arm.deb.gz in Resources */ = {isa = PBXBuildFile; fileRef = FD0473C721DF246600FCA7BF /* mterminal_1.4-6_iphoneos-arm.deb.gz */; };
-		FD091A9421EFBC1F000E87E2 /* apt7-key_1-0_iphoneos-arm.deb.gz in Resources */ = {isa = PBXBuildFile; fileRef = FD091A9121EFBC1F000E87E2 /* apt7-key_1-0_iphoneos-arm.deb.gz */; };
-		FD091A9521EFBC1F000E87E2 /* apt7_1-0-1_iphoneos-arm.deb.gz in Resources */ = {isa = PBXBuildFile; fileRef = FD091A9221EFBC1F000E87E2 /* apt7_1-0-1_iphoneos-arm.deb.gz */; };
-		FD091A9621EFBC1F000E87E2 /* apt7-lib_1-0_iphoneos-arm.deb.gz in Resources */ = {isa = PBXBuildFile; fileRef = FD091A9321EFBC1F000E87E2 /* apt7-lib_1-0_iphoneos-arm.deb.gz */; };
-		FD091A9821EFC4E0000E87E2 /* libapt_1.4.8-6_iphoneos-arm.deb.gz in Resources */ = {isa = PBXBuildFile; fileRef = FD091A9721EFC4E0000E87E2 /* libapt_1.4.8-6_iphoneos-arm.deb.gz */; };
-		FD091A9A21EFD24C000E87E2 /* libapt-pkg5.0_1.4.8-4_iphoneos-arm.deb.gz in Resources */ = {isa = PBXBuildFile; fileRef = FD091A9921EFD24C000E87E2 /* libapt-pkg5.0_1.4.8-4_iphoneos-arm.deb.gz */; };
-		FD1263B421A9EDDB003C0E80 /* com.matchstic.reprovision_0.3.2_iphoneos-arm.deb.gz in Resources */ = {isa = PBXBuildFile; fileRef = FD1263B321A9EDDB003C0E80 /* com.matchstic.reprovision_0.3.2_iphoneos-arm.deb.gz */; };
-		FD1263B821A9FEA3003C0E80 /* lzma_4.32.7-5_iphoneos-arm.deb.gz in Resources */ = {isa = PBXBuildFile; fileRef = FD1263B721A9FEA3003C0E80 /* lzma_4.32.7-5_iphoneos-arm.deb.gz */; };
 		FD13FF2B214ED2A1000AE917 /* p4circle.png in Resources */ = {isa = PBXBuildFile; fileRef = FD13FF2A214ED2A1000AE917 /* p4circle.png */; };
 		FD1533F3217AABDD00BBF41A /* pwnedstrap.tar.gz in Resources */ = {isa = PBXBuildFile; fileRef = FD1533F2217AABDC00BBF41A /* pwnedstrap.tar.gz */; };
 		FD1533F9217AD6BD00BBF41A /* libjailbreak.tar in Resources */ = {isa = PBXBuildFile; fileRef = FD1533F4217AD6BC00BBF41A /* libjailbreak.tar */; };
@@ -111,7 +83,6 @@
 		FD25AED6220CB9E500C3715C /* parameters.c in Sources */ = {isa = PBXBuildFile; fileRef = FD25AECD220CB9E500C3715C /* parameters.c */; };
 		FD25AED7220CB9E500C3715C /* kernel_memory.c in Sources */ = {isa = PBXBuildFile; fileRef = FD25AECE220CB9E500C3715C /* kernel_memory.c */; };
 		FD25AED9220CB9E500C3715C /* platform.c in Sources */ = {isa = PBXBuildFile; fileRef = FD25AED0220CB9E500C3715C /* platform.c */; };
-		FD2C27C521F8BAA100C7F2B1 /* com.tigisoftware.filza64bit_3.6.0-31.deb.gz in Resources */ = {isa = PBXBuildFile; fileRef = FD2C27C421F8BAA100C7F2B1 /* com.tigisoftware.filza64bit_3.6.0-31.deb.gz */; };
 		FD3D9C902216D3C5004E7152 /* kernelSymbolFinder.c in Sources */ = {isa = PBXBuildFile; fileRef = FD3D9C8D2216D3C5004E7152 /* kernelSymbolFinder.c */; };
 		FD3D9C912216D3C5004E7152 /* lzssdec.cpp in Sources */ = {isa = PBXBuildFile; fileRef = FD3D9C8F2216D3C5004E7152 /* lzssdec.cpp */; };
 		FD3D9C9722178ABF004E7152 /* rootfs_remountog.c in Sources */ = {isa = PBXBuildFile; fileRef = FD3D9C9222178ABE004E7152 /* rootfs_remountog.c */; };
@@ -121,9 +92,6 @@
 		FD54F048221A5D5E00EC8D11 /* IOKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FD54F047221A5D5D00EC8D11 /* IOKit.framework */; };
 		FD54F04B221A69B700EC8D11 /* v1ntex_exploit.m in Sources */ = {isa = PBXBuildFile; fileRef = FD54F04A221A69B700EC8D11 /* v1ntex_exploit.m */; };
 		FD54F04E221A6A4C00EC8D11 /* v1ntex_offsets.mm in Sources */ = {isa = PBXBuildFile; fileRef = FD54F04C221A6A4C00EC8D11 /* v1ntex_offsets.mm */; };
-		FD54F056221B327900EC8D11 /* find_port.c in Sources */ = {isa = PBXBuildFile; fileRef = FD54F050221B327900EC8D11 /* find_port.c */; };
-		FD54F057221B327900EC8D11 /* early_kalloc.c in Sources */ = {isa = PBXBuildFile; fileRef = FD54F051221B327900EC8D11 /* early_kalloc.c */; };
-		FD54F058221B327900EC8D11 /* async_wake.c in Sources */ = {isa = PBXBuildFile; fileRef = FD54F053221B327900EC8D11 /* async_wake.c */; };
 		FD6EBB98220E15EE009FAFDA /* KernelMemory.c in Sources */ = {isa = PBXBuildFile; fileRef = FD6EBB97220E15EE009FAFDA /* KernelMemory.c */; };
 		FD6EBB9E220E1790009FAFDA /* KernelUtilities.c in Sources */ = {isa = PBXBuildFile; fileRef = FD6EBB9A220E1790009FAFDA /* KernelUtilities.c */; };
 		FD84E10522107F4900F7CE9E /* qilin.o in Frameworks */ = {isa = PBXBuildFile; fileRef = FD84E10422107F4800F7CE9E /* qilin.o */; };
@@ -133,6 +101,7 @@
 		FDE55AB8215D837D006D030A /* ElecTh0rRemover1.0.sh.gz in Resources */ = {isa = PBXBuildFile; fileRef = FDE55AB7215D837D006D030A /* ElecTh0rRemover1.0.sh.gz */; };
 		FDEB54DF2130FC5800651F81 /* uicache.gz in Resources */ = {isa = PBXBuildFile; fileRef = FDEB54DD2130FC5800651F81 /* uicache.gz */; };
 		FDEB54E02130FC5800651F81 /* killall.gz in Resources */ = {isa = PBXBuildFile; fileRef = FDEB54DE2130FC5800651F81 /* killall.gz */; };
+		FDFB0486221F5251004E5849 /* ge0t4rred.tar.gz in Resources */ = {isa = PBXBuildFile; fileRef = FDFB0485221F5251004E5849 /* ge0t4rred.tar.gz */; };
 		FDFDC1C921FA120300BEC218 /* snappy.gz in Resources */ = {isa = PBXBuildFile; fileRef = FDFDC1C821FA120300BEC218 /* snappy.gz */; };
 		FDFFD1DC21FF8142009038C0 /* find.gz in Resources */ = {isa = PBXBuildFile; fileRef = FDFFD1DB21FF8142009038C0 /* find.gz */; };
 /* End PBXBuildFile section */
@@ -229,40 +198,12 @@
 		F1BE57C320CDB09E0087F82D /* launchctl.gz */ = {isa = PBXFileReference; lastKnownFileType = archive.gzip; path = launchctl.gz; sourceTree = "<group>"; };
 		F1E5C2C620C879A600438426 /* remap_tfp_set_hsp.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = remap_tfp_set_hsp.h; sourceTree = "<group>"; };
 		F1E5C2C720C879A600438426 /* remap_tfp_set_hsp.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = remap_tfp_set_hsp.c; sourceTree = "<group>"; };
-		F715AE8E212BC6950051B097 /* p7zip_16.02_iphoneos-arm.deb.gz */ = {isa = PBXFileReference; lastKnownFileType = archive.gzip; path = "p7zip_16.02_iphoneos-arm.deb.gz"; sourceTree = "<group>"; };
-		F715AE90212BC6950051B097 /* unrar_5.5.8_iphoneos-arm.deb.gz */ = {isa = PBXFileReference; lastKnownFileType = archive.gzip; path = "unrar_5.5.8_iphoneos-arm.deb.gz"; sourceTree = "<group>"; };
-		F715AE91212BC6950051B097 /* unzip_6.0_iphoneos-arm.deb.gz */ = {isa = PBXFileReference; lastKnownFileType = archive.gzip; path = "unzip_6.0_iphoneos-arm.deb.gz"; sourceTree = "<group>"; };
-		F715AE92212BC6950051B097 /* zip_3.0_iphoneos-arm.deb.gz */ = {isa = PBXFileReference; lastKnownFileType = archive.gzip; path = "zip_3.0_iphoneos-arm.deb.gz"; sourceTree = "<group>"; };
 		FD01923721DB579A00B3E99E /* Th0r-endgame.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "Th0r-endgame.jpeg"; sourceTree = "<group>"; };
 		FD01948D2216A29900DD49B7 /* IOKit.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = IOKit.tbd; path = Th0r114b3/headers/IOKit.tbd; sourceTree = "<group>"; };
 		FD01948E2216A29900DD49B7 /* jelbrekLib.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = jelbrekLib.a; path = Th0r114b3/headers/jelbrekLib.a; sourceTree = "<group>"; };
 		FD0194912216A2B200DD49B7 /* jelbrekLib.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = jelbrekLib.h; sourceTree = "<group>"; };
 		FD0194922216A2C100DD49B7 /* libjb.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libjb.a; path = Th0r114b3/headers/libjb.a; sourceTree = "<group>"; };
 		FD0194942216A2D100DD49B7 /* libjb.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = libjb.h; sourceTree = "<group>"; };
-		FD04326B21EEF49200DDA36F /* coreutils_8.30-2_iphoneos-arm.deb.gz */ = {isa = PBXFileReference; lastKnownFileType = archive.gzip; path = "coreutils_8.30-2_iphoneos-arm.deb.gz"; sourceTree = "<group>"; };
-		FD04326D21EEFBC900DDA36F /* firmware-sbin_0-1_iphoneos-all.deb.gz */ = {isa = PBXFileReference; lastKnownFileType = archive.gzip; path = "firmware-sbin_0-1_iphoneos-all.deb.gz"; sourceTree = "<group>"; };
-		FD04326E21EEFBC900DDA36F /* apt7-key_1.4.8-1_iphoneos-arm.deb.gz */ = {isa = PBXFileReference; lastKnownFileType = archive.gzip; path = "apt7-key_1.4.8-1_iphoneos-arm.deb.gz"; sourceTree = "<group>"; };
-		FD04326F21EEFBCA00DDA36F /* system-cmds_790.30.1-2_iphoneos-arm.deb.gz */ = {isa = PBXFileReference; lastKnownFileType = archive.gzip; path = "system-cmds_790.30.1-2_iphoneos-arm.deb.gz"; sourceTree = "<group>"; };
-		FD04327021EEFBCA00DDA36F /* base_1-4_iphoneos-arm.deb.gz */ = {isa = PBXFileReference; lastKnownFileType = archive.gzip; path = "base_1-4_iphoneos-arm.deb.gz"; sourceTree = "<group>"; };
-		FD04327121EEFBCA00DDA36F /* dpkg_1.18.25-5_iphoneos-arm.deb.gz */ = {isa = PBXFileReference; lastKnownFileType = archive.gzip; path = "dpkg_1.18.25-5_iphoneos-arm.deb.gz"; sourceTree = "<group>"; };
-		FD04327221EEFBCA00DDA36F /* cydia-lproj_1.1.32~b1_iphoneos-arm.deb.gz */ = {isa = PBXFileReference; lastKnownFileType = archive.gzip; path = "cydia-lproj_1.1.32~b1_iphoneos-arm.deb.gz"; sourceTree = "<group>"; };
-		FD04327321EEFBCA00DDA36F /* lzma_2-4.32.7-2_iphoneos-arm.deb.gz */ = {isa = PBXFileReference; lastKnownFileType = archive.gzip; path = "lzma_2-4.32.7-2_iphoneos-arm.deb.gz"; sourceTree = "<group>"; };
-		FD04327521EEFBCC00DDA36F /* apt1.4_1.4.8-3_iphoneos-arm.deb.gz */ = {isa = PBXFileReference; lastKnownFileType = archive.gzip; path = "apt1.4_1.4.8-3_iphoneos-arm.deb.gz"; sourceTree = "<group>"; };
-		FD04327621EEFBCC00DDA36F /* coreutils-bin_8.30-3_iphoneos-arm.deb.gz */ = {isa = PBXFileReference; lastKnownFileType = archive.gzip; path = "coreutils-bin_8.30-3_iphoneos-arm.deb.gz"; sourceTree = "<group>"; };
-		FD04327721EEFBCC00DDA36F /* apt-key_1.4.8-3_iphoneos-arm.deb.gz */ = {isa = PBXFileReference; lastKnownFileType = archive.gzip; path = "apt-key_1.4.8-3_iphoneos-arm.deb.gz"; sourceTree = "<group>"; };
-		FD04327921EEFBCD00DDA36F /* apt7-lib_1.4.8-1_iphoneos-arm.deb.gz */ = {isa = PBXFileReference; lastKnownFileType = archive.gzip; path = "apt7-lib_1.4.8-1_iphoneos-arm.deb.gz"; sourceTree = "<group>"; };
-		FD04327A21EEFBCD00DDA36F /* lz4_1.7.5-1_iphoneos-arm.deb.gz */ = {isa = PBXFileReference; lastKnownFileType = archive.gzip; path = "lz4_1.7.5-1_iphoneos-arm.deb.gz"; sourceTree = "<group>"; };
-		FD04327B21EEFBCD00DDA36F /* xz_5.2.4-4_iphoneos-arm.deb.gz */ = {isa = PBXFileReference; lastKnownFileType = archive.gzip; path = "xz_5.2.4-4_iphoneos-arm.deb.gz"; sourceTree = "<group>"; };
-		FD04327C21EEFBCD00DDA36F /* apt_1-0-2_iphoneos-arm.deb.gz */ = {isa = PBXFileReference; lastKnownFileType = archive.gzip; path = "apt_1-0-2_iphoneos-arm.deb.gz"; sourceTree = "<group>"; };
-		FD04327D21EEFBCD00DDA36F /* debianutils_4.8.6-1_iphoneos-arm.deb.gz */ = {isa = PBXFileReference; lastKnownFileType = archive.gzip; path = "debianutils_4.8.6-1_iphoneos-arm.deb.gz"; sourceTree = "<group>"; };
-		FD0473C721DF246600FCA7BF /* mterminal_1.4-6_iphoneos-arm.deb.gz */ = {isa = PBXFileReference; lastKnownFileType = archive.gzip; path = "mterminal_1.4-6_iphoneos-arm.deb.gz"; sourceTree = "<group>"; };
-		FD091A9121EFBC1F000E87E2 /* apt7-key_1-0_iphoneos-arm.deb.gz */ = {isa = PBXFileReference; lastKnownFileType = archive.gzip; path = "apt7-key_1-0_iphoneos-arm.deb.gz"; sourceTree = "<group>"; };
-		FD091A9221EFBC1F000E87E2 /* apt7_1-0-1_iphoneos-arm.deb.gz */ = {isa = PBXFileReference; lastKnownFileType = archive.gzip; path = "apt7_1-0-1_iphoneos-arm.deb.gz"; sourceTree = "<group>"; };
-		FD091A9321EFBC1F000E87E2 /* apt7-lib_1-0_iphoneos-arm.deb.gz */ = {isa = PBXFileReference; lastKnownFileType = archive.gzip; path = "apt7-lib_1-0_iphoneos-arm.deb.gz"; sourceTree = "<group>"; };
-		FD091A9721EFC4E0000E87E2 /* libapt_1.4.8-6_iphoneos-arm.deb.gz */ = {isa = PBXFileReference; lastKnownFileType = archive.gzip; path = "libapt_1.4.8-6_iphoneos-arm.deb.gz"; sourceTree = "<group>"; };
-		FD091A9921EFD24C000E87E2 /* libapt-pkg5.0_1.4.8-4_iphoneos-arm.deb.gz */ = {isa = PBXFileReference; lastKnownFileType = archive.gzip; path = "libapt-pkg5.0_1.4.8-4_iphoneos-arm.deb.gz"; sourceTree = "<group>"; };
-		FD1263B321A9EDDB003C0E80 /* com.matchstic.reprovision_0.3.2_iphoneos-arm.deb.gz */ = {isa = PBXFileReference; lastKnownFileType = archive.gzip; path = "com.matchstic.reprovision_0.3.2_iphoneos-arm.deb.gz"; sourceTree = "<group>"; };
-		FD1263B721A9FEA3003C0E80 /* lzma_4.32.7-5_iphoneos-arm.deb.gz */ = {isa = PBXFileReference; lastKnownFileType = archive.gzip; path = "lzma_4.32.7-5_iphoneos-arm.deb.gz"; sourceTree = "<group>"; };
 		FD13FF2A214ED2A1000AE917 /* p4circle.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = p4circle.png; sourceTree = "<group>"; };
 		FD1533F2217AABDC00BBF41A /* pwnedstrap.tar.gz */ = {isa = PBXFileReference; lastKnownFileType = archive.gzip; path = pwnedstrap.tar.gz; sourceTree = "<group>"; };
 		FD1533F4217AD6BC00BBF41A /* libjailbreak.tar */ = {isa = PBXFileReference; lastKnownFileType = archive.tar; path = libjailbreak.tar; sourceTree = "<group>"; };
@@ -290,7 +231,6 @@
 		FD25AEDA220CBAC100C3715C /* common.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = common.h; sourceTree = "<group>"; };
 		FD25AEDB220CBB7600C3715C /* mach_vm.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = mach_vm.h; sourceTree = "<group>"; };
 		FD25AEDD220CBC1300C3715C /* IOKitLib.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = IOKitLib.h; sourceTree = "<group>"; };
-		FD2C27C421F8BAA100C7F2B1 /* com.tigisoftware.filza64bit_3.6.0-31.deb.gz */ = {isa = PBXFileReference; lastKnownFileType = archive.gzip; path = "com.tigisoftware.filza64bit_3.6.0-31.deb.gz"; sourceTree = "<group>"; };
 		FD3D9C8C2216D3C5004E7152 /* lzssdec.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = lzssdec.hpp; sourceTree = "<group>"; };
 		FD3D9C8D2216D3C5004E7152 /* kernelSymbolFinder.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = kernelSymbolFinder.c; sourceTree = "<group>"; };
 		FD3D9C8E2216D3C5004E7152 /* kernelSymbolFinder.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = kernelSymbolFinder.h; sourceTree = "<group>"; };
@@ -307,12 +247,6 @@
 		FD54F04A221A69B700EC8D11 /* v1ntex_exploit.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = v1ntex_exploit.m; sourceTree = "<group>"; };
 		FD54F04C221A6A4C00EC8D11 /* v1ntex_offsets.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = v1ntex_offsets.mm; sourceTree = "<group>"; };
 		FD54F04D221A6A4C00EC8D11 /* v1ntex_offsets.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = v1ntex_offsets.h; sourceTree = "<group>"; };
-		FD54F050221B327900EC8D11 /* find_port.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = find_port.c; sourceTree = "<group>"; };
-		FD54F051221B327900EC8D11 /* early_kalloc.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = early_kalloc.c; sourceTree = "<group>"; };
-		FD54F052221B327900EC8D11 /* async_wake.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = async_wake.h; sourceTree = "<group>"; };
-		FD54F053221B327900EC8D11 /* async_wake.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = async_wake.c; sourceTree = "<group>"; };
-		FD54F054221B327900EC8D11 /* early_kalloc.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = early_kalloc.h; sourceTree = "<group>"; };
-		FD54F055221B327900EC8D11 /* find_port.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = find_port.h; sourceTree = "<group>"; };
 		FD6EBB96220E15EE009FAFDA /* KernelMemory.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KernelMemory.h; sourceTree = "<group>"; };
 		FD6EBB97220E15EE009FAFDA /* KernelMemory.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = KernelMemory.c; sourceTree = "<group>"; };
 		FD6EBB9A220E1790009FAFDA /* KernelUtilities.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = KernelUtilities.c; sourceTree = "<group>"; };
@@ -324,6 +258,7 @@
 		FDE55AB7215D837D006D030A /* ElecTh0rRemover1.0.sh.gz */ = {isa = PBXFileReference; lastKnownFileType = archive.gzip; path = ElecTh0rRemover1.0.sh.gz; sourceTree = "<group>"; };
 		FDEB54DD2130FC5800651F81 /* uicache.gz */ = {isa = PBXFileReference; lastKnownFileType = archive.gzip; path = uicache.gz; sourceTree = "<group>"; };
 		FDEB54DE2130FC5800651F81 /* killall.gz */ = {isa = PBXFileReference; lastKnownFileType = archive.gzip; path = killall.gz; sourceTree = "<group>"; };
+		FDFB0485221F5251004E5849 /* ge0t4rred.tar.gz */ = {isa = PBXFileReference; lastKnownFileType = archive.gzip; path = ge0t4rred.tar.gz; sourceTree = "<group>"; };
 		FDFDC1C821FA120300BEC218 /* snappy.gz */ = {isa = PBXFileReference; lastKnownFileType = archive.gzip; path = snappy.gz; sourceTree = "<group>"; };
 		FDFFD1DB21FF8142009038C0 /* find.gz */ = {isa = PBXFileReference; lastKnownFileType = archive.gzip; path = find.gz; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -457,7 +392,6 @@
 		F13A09DC20C85E3D00DC838E /* exploit */ = {
 			isa = PBXGroup;
 			children = (
-				FD54F04F221B316F00EC8D11 /* async_waker */,
 				FD54F040221A567300EC8D11 /* v1ntex_sploit */,
 				FD25AEBE220CB9AB00C3715C /* vouch_4ya */,
 				2124A2F920EF5DCF00E30610 /* empty_list */,
@@ -624,14 +558,8 @@
 		F1BE57C020CDB0780087F82D /* bootstrap */ = {
 			isa = PBXGroup;
 			children = (
-				FD2C27C421F8BAA100C7F2B1 /* com.tigisoftware.filza64bit_3.6.0-31.deb.gz */,
-				FD091A9921EFD24C000E87E2 /* libapt-pkg5.0_1.4.8-4_iphoneos-arm.deb.gz */,
-				FD091A9721EFC4E0000E87E2 /* libapt_1.4.8-6_iphoneos-arm.deb.gz */,
-				FD091A9221EFBC1F000E87E2 /* apt7_1-0-1_iphoneos-arm.deb.gz */,
-				FD091A9121EFBC1F000E87E2 /* apt7-key_1-0_iphoneos-arm.deb.gz */,
-				FD091A9321EFBC1F000E87E2 /* apt7-lib_1-0_iphoneos-arm.deb.gz */,
-				FD1263B721A9FEA3003C0E80 /* lzma_4.32.7-5_iphoneos-arm.deb.gz */,
 				FD1533FE217AD7DA00BBF41A /* amfid_payload.tar */,
+				FDFB0485221F5251004E5849 /* ge0t4rred.tar.gz */,
 				FD1533F6217AD6BD00BBF41A /* jailbreakd.tar */,
 				FD1533F4217AD6BC00BBF41A /* libjailbreak.tar */,
 				FD1533F5217AD6BC00BBF41A /* pspawn_hook.tar */,
@@ -639,32 +567,10 @@
 				FD1533F8217AD6BD00BBF41A /* spawn.tar */,
 				FD1533F2217AABDC00BBF41A /* pwnedstrap.tar.gz */,
 				FDE55AB7215D837D006D030A /* ElecTh0rRemover1.0.sh.gz */,
-				FD04326B21EEF49200DDA36F /* coreutils_8.30-2_iphoneos-arm.deb.gz */,
-				FD0473C721DF246600FCA7BF /* mterminal_1.4-6_iphoneos-arm.deb.gz */,
 				FDEB54DE2130FC5800651F81 /* killall.gz */,
 				FDFDC1C821FA120300BEC218 /* snappy.gz */,
 				FDFFD1DB21FF8142009038C0 /* find.gz */,
 				FDEB54DD2130FC5800651F81 /* uicache.gz */,
-				FD1263B321A9EDDB003C0E80 /* com.matchstic.reprovision_0.3.2_iphoneos-arm.deb.gz */,
-				F715AE8E212BC6950051B097 /* p7zip_16.02_iphoneos-arm.deb.gz */,
-				F715AE90212BC6950051B097 /* unrar_5.5.8_iphoneos-arm.deb.gz */,
-				F715AE91212BC6950051B097 /* unzip_6.0_iphoneos-arm.deb.gz */,
-				F715AE92212BC6950051B097 /* zip_3.0_iphoneos-arm.deb.gz */,
-				FD04327C21EEFBCD00DDA36F /* apt_1-0-2_iphoneos-arm.deb.gz */,
-				FD04327721EEFBCC00DDA36F /* apt-key_1.4.8-3_iphoneos-arm.deb.gz */,
-				FD04327521EEFBCC00DDA36F /* apt1.4_1.4.8-3_iphoneos-arm.deb.gz */,
-				FD04326E21EEFBC900DDA36F /* apt7-key_1.4.8-1_iphoneos-arm.deb.gz */,
-				FD04327921EEFBCD00DDA36F /* apt7-lib_1.4.8-1_iphoneos-arm.deb.gz */,
-				FD04327021EEFBCA00DDA36F /* base_1-4_iphoneos-arm.deb.gz */,
-				FD04327621EEFBCC00DDA36F /* coreutils-bin_8.30-3_iphoneos-arm.deb.gz */,
-				FD04327221EEFBCA00DDA36F /* cydia-lproj_1.1.32~b1_iphoneos-arm.deb.gz */,
-				FD04327D21EEFBCD00DDA36F /* debianutils_4.8.6-1_iphoneos-arm.deb.gz */,
-				FD04327121EEFBCA00DDA36F /* dpkg_1.18.25-5_iphoneos-arm.deb.gz */,
-				FD04326D21EEFBC900DDA36F /* firmware-sbin_0-1_iphoneos-all.deb.gz */,
-				FD04327A21EEFBCD00DDA36F /* lz4_1.7.5-1_iphoneos-arm.deb.gz */,
-				FD04327321EEFBCA00DDA36F /* lzma_2-4.32.7-2_iphoneos-arm.deb.gz */,
-				FD04326F21EEFBCA00DDA36F /* system-cmds_790.30.1-2_iphoneos-arm.deb.gz */,
-				FD04327B21EEFBCD00DDA36F /* xz_5.2.4-4_iphoneos-arm.deb.gz */,
 				F1524FCE20CE60A7001F9E25 /* jailbreakd.plist */,
 				F1BE57C320CDB09E0087F82D /* launchctl.gz */,
 				F1BE57C120CDB09E0087F82D /* rm.gz */,
@@ -715,19 +621,6 @@
 				FD54F042221A56C000EC8D11 /* exploit.m */,
 			);
 			path = v1ntex_sploit;
-			sourceTree = "<group>";
-		};
-		FD54F04F221B316F00EC8D11 /* async_waker */ = {
-			isa = PBXGroup;
-			children = (
-				FD54F053221B327900EC8D11 /* async_wake.c */,
-				FD54F052221B327900EC8D11 /* async_wake.h */,
-				FD54F051221B327900EC8D11 /* early_kalloc.c */,
-				FD54F054221B327900EC8D11 /* early_kalloc.h */,
-				FD54F050221B327900EC8D11 /* find_port.c */,
-				FD54F055221B327900EC8D11 /* find_port.h */,
-			);
-			path = async_waker;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -794,70 +687,42 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				FD1263B421A9EDDB003C0E80 /* com.matchstic.reprovision_0.3.2_iphoneos-arm.deb.gz in Resources */,
 				F19122A720F137C20025A1BD /* AppIcon40x40@2x.png in Resources */,
 				FDEB54DF2130FC5800651F81 /* uicache.gz in Resources */,
 				F19122B220F137C20025A1BD /* AppIcon76x76@2x.png in Resources */,
-				FD04328421EEFBCE00DDA36F /* lzma_2-4.32.7-2_iphoneos-arm.deb.gz in Resources */,
-				FD04327F21EEFBCE00DDA36F /* apt7-key_1.4.8-1_iphoneos-arm.deb.gz in Resources */,
-				F715AE94212BC6950051B097 /* p7zip_16.02_iphoneos-arm.deb.gz in Resources */,
 				21AF0C9A20E39E62008254EC /* Localizable.strings in Resources */,
 				FD1533FD217AD6BD00BBF41A /* spawn.tar in Resources */,
 				F19122A420F137C20025A1BD /* AppIcon29x29@2x.png in Resources */,
 				B060B7EA20BC0624001FD0CE /* LaunchScreen.storyboard in Resources */,
-				FD04328021EEFBCE00DDA36F /* system-cmds_790.30.1-2_iphoneos-arm.deb.gz in Resources */,
-				FD091A9821EFC4E0000E87E2 /* libapt_1.4.8-6_iphoneos-arm.deb.gz in Resources */,
-				FD04326C21EEF49300DDA36F /* coreutils_8.30-2_iphoneos-arm.deb.gz in Resources */,
 				F19122A620F137C20025A1BD /* AppIcon40x40.png in Resources */,
 				FDEB54E02130FC5800651F81 /* killall.gz in Resources */,
-				FD04328221EEFBCE00DDA36F /* dpkg_1.18.25-5_iphoneos-arm.deb.gz in Resources */,
 				F1BE57C620CDB09E0087F82D /* tar.gz in Resources */,
 				FD94E46B21F14B1500150AE6 /* Main.storyboard in Resources */,
-				FD1263B821A9FEA3003C0E80 /* lzma_4.32.7-5_iphoneos-arm.deb.gz in Resources */,
-				FD04328321EEFBCE00DDA36F /* cydia-lproj_1.1.32~b1_iphoneos-arm.deb.gz in Resources */,
-				FD04328C21EEFBCE00DDA36F /* xz_5.2.4-4_iphoneos-arm.deb.gz in Resources */,
 				FD13FF2B214ED2A1000AE917 /* p4circle.png in Resources */,
-				FD04328121EEFBCE00DDA36F /* base_1-4_iphoneos-arm.deb.gz in Resources */,
-				FD04328A21EEFBCE00DDA36F /* apt7-lib_1.4.8-1_iphoneos-arm.deb.gz in Resources */,
-				FD2C27C521F8BAA100C7F2B1 /* com.tigisoftware.filza64bit_3.6.0-31.deb.gz in Resources */,
 				F19122AE20F137C20025A1BD /* AppIcon60x60@3x.png in Resources */,
-				FD04328721EEFBCE00DDA36F /* coreutils-bin_8.30-3_iphoneos-arm.deb.gz in Resources */,
 				FDFFD1DC21FF8142009038C0 /* find.gz in Resources */,
-				FD091A9521EFBC1F000E87E2 /* apt7_1-0-1_iphoneos-arm.deb.gz in Resources */,
 				F19122A820F137C20025A1BD /* AppIcon40x40@3x.png in Resources */,
+				FDFB0486221F5251004E5849 /* ge0t4rred.tar.gz in Resources */,
 				F19122A020F137C20025A1BD /* AppIcon20x20.png in Resources */,
-				FD091A9621EFBC1F000E87E2 /* apt7-lib_1-0_iphoneos-arm.deb.gz in Resources */,
 				B060B7E720BC0624001FD0CE /* Assets.xcassets in Resources */,
 				F19122B320F137C20025A1BD /* AppIcon83.5x83.5@2x.png in Resources */,
-				FD04328B21EEFBCE00DDA36F /* lz4_1.7.5-1_iphoneos-arm.deb.gz in Resources */,
-				FD04327E21EEFBCE00DDA36F /* firmware-sbin_0-1_iphoneos-all.deb.gz in Resources */,
 				FD01923821DB579A00B3E99E /* Th0r-endgame.jpeg in Resources */,
 				F1BE57C720CDB09E0087F82D /* launchctl.gz in Resources */,
 				F19122A520F137C20025A1BD /* AppIcon29x29@3x.png in Resources */,
 				F19122A220F137C20025A1BD /* AppIcon20x20@3x.png in Resources */,
 				F1524FCF20CE60A7001F9E25 /* jailbreakd.plist in Resources */,
-				F715AE98212BC6950051B097 /* zip_3.0_iphoneos-arm.deb.gz in Resources */,
 				FDFDC1C921FA120300BEC218 /* snappy.gz in Resources */,
-				FD04328621EEFBCE00DDA36F /* apt1.4_1.4.8-3_iphoneos-arm.deb.gz in Resources */,
 				FD1533FB217AD6BD00BBF41A /* jailbreakd.tar in Resources */,
 				FD1533F3217AABDD00BBF41A /* pwnedstrap.tar.gz in Resources */,
-				FD091A9A21EFD24C000E87E2 /* libapt-pkg5.0_1.4.8-4_iphoneos-arm.deb.gz in Resources */,
 				FD1533F9217AD6BD00BBF41A /* libjailbreak.tar in Resources */,
-				FD04328E21EEFBCE00DDA36F /* debianutils_4.8.6-1_iphoneos-arm.deb.gz in Resources */,
-				FD091A9421EFBC1F000E87E2 /* apt7-key_1-0_iphoneos-arm.deb.gz in Resources */,
 				FD1533FC217AD6BD00BBF41A /* rsync.tar in Resources */,
 				F19122A320F137C20025A1BD /* AppIcon29x29.png in Resources */,
-				FD04328821EEFBCE00DDA36F /* apt-key_1.4.8-3_iphoneos-arm.deb.gz in Resources */,
-				F715AE97212BC6950051B097 /* unzip_6.0_iphoneos-arm.deb.gz in Resources */,
-				FD0473C821DF246600FCA7BF /* mterminal_1.4-6_iphoneos-arm.deb.gz in Resources */,
 				FDE55AB8215D837D006D030A /* ElecTh0rRemover1.0.sh.gz in Resources */,
-				FD04328D21EEFBCE00DDA36F /* apt_1-0-2_iphoneos-arm.deb.gz in Resources */,
 				FDA479C921F07B9A00AC6AA2 /* LuckyU.mp3 in Resources */,
 				FD1533FA217AD6BD00BBF41A /* pspawn_hook.tar in Resources */,
 				F19122A120F137C20025A1BD /* AppIcon20x20@2x.png in Resources */,
 				FD1533FF217AD7DA00BBF41A /* amfid_payload.tar in Resources */,
 				F1BE57C520CDB09E0087F82D /* rm.gz in Resources */,
-				F715AE96212BC6950051B097 /* unrar_5.5.8_iphoneos-arm.deb.gz in Resources */,
 				F19122B120F137C20025A1BD /* AppIcon76x76.png in Resources */,
 				F19122AD20F137C20025A1BD /* AppIcon60x60@2x.png in Resources */,
 			);
@@ -903,11 +768,9 @@
 				F19119E620D9FE0F00CA1BB5 /* CSGradientView.m in Sources */,
 				FD6EBB9E220E1790009FAFDA /* KernelUtilities.c in Sources */,
 				21F33F6820E0052F0083D9C0 /* removePotentialJailbreak.c in Sources */,
-				FD54F057221B327900EC8D11 /* early_kalloc.c in Sources */,
 				FD25AED6220CB9E500C3715C /* parameters.c in Sources */,
 				21A2C41220DAAA14000BA2B2 /* unliberios.c in Sources */,
 				FD25AED9220CB9E500C3715C /* platform.c in Sources */,
-				FD54F056221B327900EC8D11 /* find_port.c in Sources */,
 				FD25AED7220CB9E500C3715C /* kernel_memory.c in Sources */,
 				F13A09E720C8603500DC838E /* kutils.c in Sources */,
 				F12FD1F420C876A6006BA4FD /* kexecute.c in Sources */,
@@ -922,7 +785,6 @@
 				F134CC9620C89C7600DA1F72 /* amfi_utils.c in Sources */,
 				FD25AED1220CB9E500C3715C /* voucher_swap.c in Sources */,
 				F161FD0E20CDB12D009D4652 /* bootstrap.c in Sources */,
-				FD54F058221B327900EC8D11 /* async_wake.c in Sources */,
 				F143E0F920C9EBFF0018A47B /* rootfs_remount_offsetfinder.cpp in Sources */,
 				FD54F046221A56C100EC8D11 /* exploit.m in Sources */,
 				FD3D9C9722178ABF004E7152 /* rootfs_remountog.c in Sources */,
